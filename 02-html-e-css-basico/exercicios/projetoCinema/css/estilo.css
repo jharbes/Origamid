@@ -11,3 +11,15 @@ h2>a{
 a{
     text-decoration: none;
 }
+
+.hoje{
+    color: darkred;
+}
+
+.amanha{
+    color: darkblue;
+}
+
+p{
+    font-size: 20px;
+}
