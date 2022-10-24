@@ -1,4 +1,4 @@
-<img src="front-end.png" align="right" width="120">
+<img src="front-end.png" align="right" width="150">
 
 # Origamid
 
