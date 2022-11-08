@@ -1,3 +1,7 @@
+// Na declaracao de variáveis elas podem começar por $, _ ou letras, podem conter números mas não iniciar com eles
+// São case sensitive, não podem utilizar palavras reservadas
+// É uma boa prática usar camelCase
+
 var nome='André'
 var idade=28
 var possuiFaculdade=true
