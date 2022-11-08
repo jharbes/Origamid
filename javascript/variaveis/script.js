@@ -25,3 +25,10 @@ console.log(sobreNome,cidade)
 var semDefinir
 
 console.log(semDefinir)
+
+// o var sofre hoisting, no entanto apenas para a declaracao da variavel, para o valor atribuido o hoisting nao é valido
+
+var comida
+console.log(comida)
+comida='pizza'
+console.log(comida)
