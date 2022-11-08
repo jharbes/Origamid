@@ -4,7 +4,7 @@ var variavel1='Fluminense'
 
 // Declare uma variável contendo um número dentro de uma string
 
-var var2='1000 gols'
+var var2='1000'
 
 // Declare uma variável com a sua idade
 
@@ -22,5 +22,6 @@ nome+sobrenome
 var pedido="It's time"
 
 // Verifique o tipo da variável que contém o seu nome
-
+tipoNome=typeof nome
 console.log(typeof nome)
+console.log(typeof tipoNome)
