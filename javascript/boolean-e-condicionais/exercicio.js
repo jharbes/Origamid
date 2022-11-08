@@ -14,7 +14,7 @@ else
 // Qual valor é retornado na seguinte expressão?
 var expressao = (5 - 2) && (5 - ' ') && (5 - 2);
 console.log(expressao)
-// 3 && NaN && 3 = 3
+// 3 && 5 && 3 = 3
 
 // Verifique se as seguintes variáveis são Truthy ou Falsy
 var nome = 'Andre'; // true
