@@ -22,3 +22,12 @@ var numero = '80';
 var unidade = 'kg';
 var peso = numero + unidade; // '80kg'
 var pesoPorDois = peso / 2; // NaN (Not a Number)
+
+// Resposta:
+
+var numero = +'80';
+var unidade = 'kg';
+var peso = numero + unidade; // '80kg'
+console.log(peso)
+var pesoPorDois = numero / 2 + unidade; // NaN (Not a Number)
+console.log(pesoPorDois)
