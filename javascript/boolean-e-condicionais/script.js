@@ -29,4 +29,13 @@ if(' ')
 if('andre')
 if(-5)
 if({});
-console.log('teste')
+
+
+// operador logico de negacao
+// a negacao dupla pode ser utilizada para verificar qual o valor daquela expressao
+if(!true) // false
+if(!1) // false
+if(!'') // true
+if(!undefined) // true
+if(!!' ') // true
+if(!!''); // false
