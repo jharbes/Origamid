@@ -18,3 +18,9 @@ comidaFavorita='churrasco'
 // Declarar 5 variáveis diferentes sem valores
 
 var n1,n2,n3,n4,n5
+
+var a1,
+    a2,
+    a3,
+    a4,
+    a5
