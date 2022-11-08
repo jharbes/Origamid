@@ -57,3 +57,56 @@ if(!!''); // false
 10 != 15 // true
 10 != '10' // false
 10 !== '10' // true
+
+
+
+// IMPORTANTE***: Se ambos os valores forem true ele irá retornar o último valor verificado,
+// se algum valor for falso ele irá retorna-lo  e não irá continuar a verificar os próximos
+
+true && true; // true
+true && false; // false
+false && true; // false
+'Gato' && 'Cão'; // 'Cão'
+(5 - 5) && (5 + 5); // 0
+'Gato' && false; // false
+(5 >= 5) && (3 < 6); // true
+
+// Exemplo:
+console.log('Gato' && 'Cão') // retorna 'Cão'
+console.log((5-5)&&(5+5)) // retorna 0
+
+
+
+// IMPORTANTE***: O operador OU sempre retorna o primeiro verdadeiro, caso não haja nenhum valor
+// verdadeiro ele retornará false
+
+true || true; // true
+true || false; // true
+false || true; // true
+'Gato' || 'Cão'; // 'Gato'
+(5 - 5) || (5 + 5); // 10
+'Gato' || false; // Gato
+(5 >= 5) || (3 < 6); // true
+
+// Exemplo:
+var condicional2=5-5||5+5||10-2
+console.log(condicional2)
+
+
+
+// SWITCH:
+var corFavorita = 'Azul';
+
+switch (corFavorita) {
+  case 'Azul':
+    console.log('Olhe para o céu.');
+    break;
+  case 'Vermelho':
+    console.log('Olhe para rosas.');
+    break;
+  case 'Amarelo':
+    console.log('Olhe para o sol.');
+    break;
+  default:
+    console.log('Feche os olhos');
+}
