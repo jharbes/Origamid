@@ -46,4 +46,9 @@ addEventListener('click', function() {
 // Funções anonimas : 
 // function () {} ou () => {}
 
+// A funcao acima possui funcionamento identico a de baixo:
 
+function mostraConsole(){
+  console.log('Clicou')
+}
+addEventListener('click',mostraConsole)
