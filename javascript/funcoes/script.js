@@ -76,3 +76,43 @@ function terceiraIdade(idade) {
     return false;
   }
 }
+
+
+// ESCOPO ===> Variaveis e funcoes definidas dentro de um bloco {} nao sao visiveis fora dele
+function precisoVisitar(paisesVisitados) {
+  var totalPaises = 193;
+  return `Ainda faltam ${totalPaises - paisesVisitados} paises para visitar`
+}
+// console.log(totalPaises); // erro, totalPaises não definido *****
+
+
+
+// FUNCOES conseguem acessar variaveis criadas no contexto PAI exemplo com profissao:
+
+var profissao = 'Designer'
+
+function dados() {
+    var nome = 'André';
+    var idade = 28;
+    function outrosDados() {
+      var endereco = 'Rio de Janeiro';
+      var idade = 29;
+      return `${nome}, ${idade}, ${endereco}, ${profissao}`;
+    }
+    return outrosDados();
+}
+
+dados() // Retorna 'André, 29, Rio de Janeiro, Designer'
+// outrosDados() // retorna um erro*****
+
+
+
+// HOISTING:: Todas as funções são içadas para o inicio do código, ou seja, podemos chamar elas antes mesmo
+// de sua declaracao (valido apenas para a sintaxe padrao function)
+
+imc3(80, 1.80); // imc aparece no console
+
+function imc3(peso, altura) {
+  const imc = peso / (altura ** 2);
+  console.log(imc);
+}
