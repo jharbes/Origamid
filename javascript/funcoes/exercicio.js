@@ -1,7 +1,20 @@
 // Crie uma função para verificar se um valor é Truthy
 
+function isTrue(valor){
+  return valor==true?true:false
+}
+
+console.log(isTrue(5>2))
+console.log(isTrue(2!=2))
+
 // Crie uma função matemática que retorne o perímetro de um quadrado
 // lembrando: perímetro é a soma dos quatro lados do quadrado
+
+const perimetroQuadrado=(lado)=>{
+  return 4*lado
+}
+
+console.log(perimetroQuadrado(2))
 
 // Crie uma função que retorne o seu nome completo
 // ela deve possuir os parâmetros: nome e sobrenome
