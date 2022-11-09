@@ -1,11 +1,13 @@
 // Crie uma função para verificar se um valor é Truthy
 
 function isTrue(valor){
-  return valor==true?true:false
+  return !!valor?true:false
 }
 
 console.log(isTrue(5>2))
 console.log(isTrue(2!=2))
+console.log('teste',isTrue(5))
+console.log('teste2',isTrue(''))
 
 // Crie uma função matemática que retorne o perímetro de um quadrado
 // lembrando: perímetro é a soma dos quatro lados do quadrado
