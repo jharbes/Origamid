@@ -76,3 +76,9 @@ function terceiraIdade(idade) {
     return false;
   }
 }
+
+function precisoVisitar(paisesVisitados) {
+  var totalPaises = 193;
+  return `Ainda faltam ${totalPaises - paisesVisitados} paises para visitar`
+}
+// console.log(totalPaises); // erro, totalPaises não definido
