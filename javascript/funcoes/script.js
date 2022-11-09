@@ -84,7 +84,7 @@ function precisoVisitar(paisesVisitados) {
 // console.log(totalPaises); // erro, totalPaises não definido
 
 
-
+// A VARIAVEL DEFINIDA NO ESCOPO ACIMA PERMANECE VALIDA DENTRO DA FUNCAO  
 
 var profissao = 'Designer';
 
