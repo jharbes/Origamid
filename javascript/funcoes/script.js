@@ -76,3 +76,33 @@ function terceiraIdade(idade) {
     return false;
   }
 }
+
+
+// ESCOPO
+
+function precisoVisitar(paisesVisitados) {
+  var totalPaises = 193;
+  return `Ainda faltam ${totalPaises - paisesVisitados} paises para visitar`
+}
+// console.log(totalPaises); // erro, totalPaises não definido
+
+
+
+// ESCOPO LEXICO
+var profissao = 'Designer';
+
+function dados() {
+  var nome = 'André';
+  var idade = 28;
+  function outrosDados() {
+    var endereco = 'Rio de Janeiro';
+    var idade = 29;
+    return `${nome}, ${idade}, ${endereco}, ${profissao}`;
+  }
+  return outrosDados();
+}
+
+dados(); // Retorna 'André, 29, Rio de Janeiro, Designer'
+// outrosDados(); // retorna um erro
+
+
