@@ -18,3 +18,32 @@ function imc(peso, altura) {
 
 imc(80, 1.80) // 80 e 1.80 são os argumentos
 imc(60, 1.70) // 60 e 1.70 são os argumentos
+
+
+// Em JavaScript nao precisamos necessariamente passar argumentos para funcoes quando ela tiver parametros
+function corFavorita(cor) {
+  if(cor === 'azul') {
+    return 'Você gosta do céu';
+  } else if(cor === 'verde') {
+    return 'Você gosta de mato';
+  } else {
+    return 'Você não gosta de nada';
+  }
+}
+corFavorita(); // retorna 'Você não gosta de nada'
+
+
+
+// Argumentos podem ser funções
+// Chamadas de callback, geralmente são funcoes que ocorrem apos algum evento
+addEventListener('click', function() {
+  console.log('Clicou');
+});
+// A função possui dois argumentos
+// Primeiro é a string 'click'
+// Segundo é uma função anônima
+
+// Funções anonimas : 
+// function () {} ou () => {}
+
+
