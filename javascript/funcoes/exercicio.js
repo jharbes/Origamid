@@ -49,7 +49,9 @@ console.log(tipoDado(ehPar))
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
 
-
+document.addEventListener('scroll',function(){
+  console.log('Jorge Nami Harbes')
+})
 
 
 // Corrija o erro abaixo
