@@ -101,3 +101,17 @@ function dados() {
 
 dados(); // Retorna 'André, 29, Rio de Janeiro, Designer'
 // outrosDados(); // retorna um erro
+
+
+
+// HOISTING, a funcao é içada para o inicio do código, só funciona
+// para funcoes que tenham utilizado a sintaxe padrao function
+
+imc3(80, 1.80); // imc aparece no console
+
+function imc3(peso, altura) {
+  const imc = peso / (altura ** 2);
+  console.log(imc);
+}
+
+
