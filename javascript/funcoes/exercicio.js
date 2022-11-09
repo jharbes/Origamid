@@ -37,10 +37,19 @@ console.log(ehPar(7))
 // Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
 
+const tipoDado=function(dado){
+  return typeof dado
+}
+
+console.log(tipoDado(2))
+console.log(tipoDado(ehPar))
+
 // addEventListener é uma função nativa do JavaScript
 // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
 // utilize essa função para mostrar no console o seu nome completo
 // quando o evento 'scroll' ocorrer.
+
+
 
 
 // Corrija o erro abaixo
