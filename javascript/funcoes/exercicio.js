@@ -19,7 +19,20 @@ console.log(perimetroQuadrado(2))
 // Crie uma função que retorne o seu nome completo
 // ela deve possuir os parâmetros: nome e sobrenome
 
+const nomeCompleto=function(nome,sobrenome){
+  return `${nome} ${sobrenome}`
+}
+
+console.log(nomeCompleto('Jorge','Harbes'))
+
 // Crie uma função que verifica se um número é par
+
+function ehPar(numero){
+  return numero%2==0?true:false
+}
+
+console.log(ehPar(4))
+console.log(ehPar(7))
 
 // Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
