@@ -1,4 +1,5 @@
-<img src="front-end.png" align="right" width="150">
+<img src="react.png" align="right" width="130">
+<img src="front-end.png" align="right" width="130">
 
 # Origamid
 
