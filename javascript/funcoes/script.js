@@ -52,3 +52,27 @@ function mostraConsole(){
   console.log('Clicou')
 }
 addEventListener('click',mostraConsole)
+
+
+
+function imc2(peso, altura) {
+  const imc = peso / (altura ** 2);
+  console.log(imc);
+}
+
+imc2(80, 1.80); // retorna o imc que esta no console log dentro da funcao
+console.log(imc2(80, 1.80)); // retorna o imc e undefined (retorno nativo de funcao sem retorno)
+
+
+
+// uma funcao pode retornar qualquer tipo de dado, inclusive outras funcoes
+// *** NAO É UMA BOA PRÁTICA retornar diferentes tipos de dados na mesma funcao
+function terceiraIdade(idade) {
+  if(typeof idade !== 'number') {
+    return 'Informe a sua idade!';
+  } else if(idade >= 60) {
+    return true;
+  } else {
+    return false;
+  }
+}
