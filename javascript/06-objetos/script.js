@@ -109,3 +109,16 @@ menu2.metadeHeight(); // 25
 // sem o this, seria 60
 
 
+
+
+//PROTÓTIPO E HERANÇA
+// O objeto herda propriedades e métodos do objeto que foi utilizado para criar o mesmo.
+// o método hasOwnProperty retorna se o objeto possui aquele atributo que foi pesquisado,
+// irá retornar falso caso o atributo seja da superclasse (herdado)
+
+var menu5 = {
+  width: 800,
+}
+
+menu5.hasOwnProperty('width') // true
+menu5.hasOwnProperty('height') // false
