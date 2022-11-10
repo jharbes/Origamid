@@ -44,3 +44,16 @@ areaQuadrado.length; // 1
 //----------------------------------------------------------------------------------
 
 
+// ELEMENTOS DO DOM também sao objetos, document por exemplo é um objeto
+
+var btn = document.querySelector('.btn');
+
+btn.classList.add('azul') // adiciona a classe azul
+btn.innerText; // 'Clique'
+btn.addEventListener('click', function() {
+  console.log('Clicou')
+})
+
+// Praticamente todos os efeitos com JS são feitos utilizando propriedades e métodos de objetos do DOM.
+
+
