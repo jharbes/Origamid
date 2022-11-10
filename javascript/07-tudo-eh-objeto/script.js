@@ -36,7 +36,11 @@ console.log(areaQuadrado.toString())
 //  return lado * lado;
 //}"
 
+// o .legth para a funcao retorna o total de argumentos que a funcao possui
+
 areaQuadrado.length; // 1
 
 
 //----------------------------------------------------------------------------------
+
+
