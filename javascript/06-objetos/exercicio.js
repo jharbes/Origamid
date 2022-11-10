@@ -26,8 +26,19 @@ var carro = {
     portas: 4,
     marca: 'Audi',
   }
+
+carro.preco=3000
+console.log(carro)
   
-  // Crie um objeto de um cachorro que represente um labrador,
-  // preto com 10 anos, que late ao ver um homem
-  
-  
+// Crie um objeto de um cachorro que represente um labrador,
+// preto com 10 anos, que late ao ver um homem
+
+cachorro={
+    raca:'labrador',
+    idade:10,
+    verHomem(){
+        console.log('latido')
+    }
+}
+console.log(cachorro)
+cachorro.verHomem()
