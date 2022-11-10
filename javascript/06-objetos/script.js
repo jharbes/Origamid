@@ -15,6 +15,8 @@ pessoa1.nome; // 'André'
 pessoa1.possuiFaculdade; // true
 
 
+//----------------------------------------------------------------------------------
+
 // MÉTODOS==> Propriedade que possui uma funcao no local do seu valor
 
 var quadrado = {
@@ -34,6 +36,9 @@ quadrado.perimetro(5); // 20
 console.log(quadrado.area(5))
 
 
+//----------------------------------------------------------------------------------
+
+
 // OBJETO COM ABREVIACAO NA SINTAXE DO MÉTODO ABAIXO:
 // IMPORTANTE**** Os métodos também devem ser separados por vírgula
 
@@ -48,6 +53,7 @@ var quadrado2 = {
 }
 
 
+//----------------------------------------------------------------------------------
 // Objetos servem para organizar o código em pequenas partes reutilizáveis.
 
 // Math é um objeto nativo de JavaScript. Já percebeu que console é um objeto e log() um método?
@@ -61,6 +67,7 @@ console.log(pi); // 3.14
 console.table(quadrado)
 
 
+//----------------------------------------------------------------------------------
 // DOT NOTATION SET
 // Substitua o valor de uma propriedade utilizando . e o = após o nome da mesma.
 
@@ -75,7 +82,7 @@ menu.backgroundColor = '#000';
 console.log(menu.backgroundColor); // '#000'
 
 
-
+//----------------------------------------------------------------------------------
 // ADICIONAR PROPRIEDADES E MÉTODOS
 // Basta adicionar um novo nome e definir o valor.
 
@@ -92,7 +99,7 @@ menu3.esconder=function(){
 console.log(menu3)
 
 
-
+//----------------------------------------------------------------------------------
 // Palavra chave this
 // this ira fazer referencia ao proprio objeto
 
@@ -110,7 +117,7 @@ menu2.metadeHeight(); // 25
 
 
 
-
+//----------------------------------------------------------------------------------
 //PROTÓTIPO E HERANÇA
 // O objeto herda propriedades e métodos do objeto que foi utilizado para criar o mesmo.
 // o método hasOwnProperty retorna se o objeto possui aquele atributo que foi pesquisado,
