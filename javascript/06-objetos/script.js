@@ -58,4 +58,54 @@ Math.random(); // número aleatório
 var pi = Math.PI;
 console.log(pi); // 3.14
 
+console.table(quadrado)
+
+
+// DOT NOTATION SET
+// Substitua o valor de uma propriedade utilizando . e o = após o nome da mesma.
+
+var menu = {
+  width: 800,
+  height: 50,
+  backgroundColor: '#84E',
+}
+
+var bg = menu.backgroundColor; // '#84E'
+menu.backgroundColor = '#000';
+console.log(menu.backgroundColor); // '#000'
+
+
+
+// ADICIONAR PROPRIEDADES E MÉTODOS
+// Basta adicionar um novo nome e definir o valor.
+
+var menu3 = {
+  width: 800,
+}
+
+menu3.height = 50;
+menu3.position = 'fixed';
+menu3.esconder=function(){
+  console.log('escondi')
+}
+
+console.log(menu3)
+
+
+
+// Palavra chave this
+// this ira fazer referencia ao proprio objeto
+
+var height = 120;
+var menu2 = {
+  width: 800,
+  height: 50,
+  metadeHeight() {
+    return this.height / 2;
+  }
+}
+
+menu2.metadeHeight(); // 25
+// sem o this, seria 60
+
 
