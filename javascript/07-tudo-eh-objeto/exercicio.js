@@ -14,12 +14,13 @@ console.log(nome.toLowerCase())
 
 // nomeie 5 propriedades ou métodos de elementos do DOM
 
-document.addEventListener
-document.ATTRIBUTE_NODE
-document.getElementsByClassName('red')
+var btn2=document.querySelector('h1')
+btn2.addEventListener
+btn2.ATTRIBUTE_NODE
+btn2.getElementsByClassName('red')
 
 
 // busque na web um objeto (método) capaz de interagir com o clipboard, 
 // clipboard é a parte do seu computador que lida com o CTRL + C e CTRL + V
 
-Clipboard
+// ver clipboard.js no google
