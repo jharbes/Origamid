@@ -35,10 +35,12 @@ console.log(carro)
 
 cachorro={
     raca:'labrador',
+    cor:'preto',
     idade:10,
-    verHomem(){
-        console.log('latido')
+    latir(pessoa){
+        console.log(pessoa=='homem'?'latiu':'nao latiu')
     }
 }
 console.log(cachorro)
-cachorro.verHomem()
+cachorro.latir()
+cachorro.latir('homem')
