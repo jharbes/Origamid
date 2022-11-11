@@ -34,6 +34,7 @@ console.log('//-----------------------------------------------------------------
 
 // ESCOPO DE FUNÇÃO (PAI)
 // Variáveis declaradas no escopo pai da função, conseguem ser acessadas pelas funções.
+// Variáveis declaradas com var DENTRO DA FUNCAO so funcionam dentro da funcao, possuem escopo de bloco nesse caso
 
 var carro = 'Fusca';
 
@@ -47,5 +48,63 @@ console.log(carro);  // Fusca
 
 
 console.log('//-----------------------------------------------------------------------------')
+
+
+// ESCOPO DE BLOCO
+// Variáveis criadas com var, vazam o bloco. Por isso com a introdução do ES6 a melhor forma de declarmos uma variável é utilizando const e let, pois estas respeitam o escopo de bloco.
+
+if(true) {
+  var carro = 'Fusca';
+  console.log(carro);
+}
+console.log(carro); // Carro
+
+
+// VAR VAZA O BLOCO
+// Mesmo com a condição falsa, a variável ainda será declarada utilizando hoisting e o valor ficará como undefined.
+
+if(false) {
+  var carro = 'Fusca';
+  console.log(carro);
+}
+console.log(carro); // undefined
+
+
+
+console.log('//-----------------------------------------------------------------------------')
+
+
+// CONST E LET NO LUGAR DE VAR
+// A partir de agora vamos utilizar apenas const e let para declarmos variáveis.
+
+if(true) {
+  const carro = 'Fusca';
+  console.log(carro);
+}
+// console.log(carro); // erro, carro is not defined
+
+
+// {} CRIA UM BLOCO
+// Chaves {} criam um escopo de bloco, não confundir com a criação de objetos = {}
+
+{
+  var carro = 'Fusca';
+  const ano = 2018;
+}
+console.log(carro); // Carro
+// console.log(ano); // erro ano is not defined
+
+
+
+console.log('//-----------------------------------------------------------------------------')
+
+// FOR LOOP
+// Ao utilizar var dentro de um forloop, que é um bloco, o valor do variável utilizada irá vazar e existir fora do loop. 
+// Na maioria das vezes essa prática é desaconselhavel.
+
+for(var i = 0; i < 10; i++) {
+  console.log(`Número ${i}`);
+}
+console.log(i); // 10
 
 
