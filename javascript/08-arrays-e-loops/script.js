@@ -98,3 +98,18 @@ var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
 videoGames.forEach(function(item,indice,array) {
   console.log(array);
 });
+
+
+
+console.log('//-----------------------------------------------------------------------------')
+
+// NÃO SE CONFUNDA COM A SINTAXE
+
+var numero = 0;
+var maximo = 50;
+for(;numero < maximo;) {
+  console.log(numero);
+  numero++;
+}
+
+// Não aconselho escrever da forma acima, mas funciona normalmente.
