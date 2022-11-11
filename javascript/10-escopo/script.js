@@ -122,3 +122,26 @@ console.log(i); // i is not defined
 console.log('//-----------------------------------------------------------------------------')
 
 
+// CONST
+// Mantém o escopo no bloco, impede a redeclaração e impede a modificação do valor da variável, evitando bugs no código.
+// Variáveis com valores constantes devem utilizar o const.
+
+const mes = 'Dezembro';
+// mes = 'Janeiro'; // erro, tentou modificar o valor
+// const semana; // erro, declarou sem valor
+
+const data = {
+  dia: 28,
+  mes: 'Dezembro',
+  ano: 2018,
+}
+
+data.dia = 29; // Funciona, atributos e metodos de um objeto podem ser alterados normalmente mesmo esta tendo sido declarada como const
+// data = 'Janeiro'; // erro
+
+
+
+console.log('//-----------------------------------------------------------------------------')
+
+
+
