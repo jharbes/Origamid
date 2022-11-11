@@ -26,3 +26,15 @@ x **= y; // x = x ** y (9765625)
 
 console.log('//-----------------------------------------------------------------------------')
 
+
+// OPERADOR TERNÁRIO
+// Abreviação de condicionais com if e else
+// Geralmente utilizado quando precisamos atribuir um valor para uma variável, dependendo de uma condição
+
+var idade = 19;
+var podeBeber = (idade >= 18) ? 'Pode beber' : 'Não pode beber';
+console.log(podeBeber) // Pode beber
+
+// condição ? true : false
+
+
