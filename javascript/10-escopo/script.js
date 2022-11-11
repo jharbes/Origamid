@@ -138,10 +138,25 @@ const data = {
 
 data.dia = 29; // Funciona, atributos e metodos de um objeto podem ser alterados normalmente mesmo esta tendo sido declarada como const
 // data = 'Janeiro'; // erro
-
-
+data.hora=18 // aceita novos atributos
+data.toString=function(){ // aceita adicionar novos metodos
+  return `${this.dia}/${this.mes}/${this.ano}`
+}
+console.log(data.toString())
+console.log(data)
 
 console.log('//-----------------------------------------------------------------------------')
 
 
+
+// LET
+// Mantém o escopo no bloco, impede a redeclaração, mas permite a modificação do valor da variável.
+// A preferencia será pela utilizacao do const
+
+let ano;
+ano = 2018;
+ano++;
+console.log(ano); // 2019
+
+// let ano = 2020; // erro, redeclarou a variável
 
