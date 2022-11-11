@@ -76,10 +76,25 @@ console.log('//-----------------------------------------------------------------
 
 // FOREACH
 // forEach é um método que executa uma função para cada item da Array. É uma forma mais simples de utilizarmos um loop com arrays (ou array-like)
-// Podemos passar os seguintes parâmetros item, index e array
+// *****Podemos passar os seguintes parâmetros item, index e array NESSA ORDEM******
 
 var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
 videoGames.forEach(function(item) {
   console.log(item);
 });
 // O argumento item será atribuído dinamicamente
+
+console.log('//-----------------------------------------------------------------------------')
+
+var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
+videoGames.forEach(function(item,indice,array) {
+  console.log(indice);
+});
+
+
+console.log('//-----------------------------------------------------------------------------')
+
+var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
+videoGames.forEach(function(item,indice,array) {
+  console.log(array);
+});
