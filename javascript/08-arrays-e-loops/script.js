@@ -30,3 +30,28 @@ for (var numero = 0; numero < 10; numero++) {
 // Retorna de 0 a 9 no console
 
 
+
+//-----------------------------------------------------------------------------
+
+// WHILE LOOP
+var i = 0;
+while (i < 10) {
+  console.log(i);
+  i++;
+}
+// Retorna de 0 a 9 no console
+// O for loop é o mais comum
+
+
+
+//-----------------------------------------------------------------------------
+
+
+// ARRAYS E LOOPS
+// O for loop é o mais comum
+
+var videoGames = ['Switch', 'PS4', 'XBox', '3DS'];
+for (var i = 0; i < videoGames.length; i++) {
+  console.log(videoGames[i]);
+}
+
