@@ -17,3 +17,16 @@ videoGames.push('3DS'); // Adiciona ao final da array
 videoGames.length; // 3 (retorna o tamanho do array ou numero de elementos)
 
 
+//-----------------------------------------------------------------------------
+
+
+// FOR LOOP
+// Fazem algo repetidamente até que uma condição seja atingida.
+// O for loop possui 3 partes, início, condição e incremento
+
+for (var numero = 0; numero < 10; numero++) {
+    console.log(numero);
+}
+// Retorna de 0 a 9 no console
+
+
