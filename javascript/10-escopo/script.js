@@ -88,17 +88,17 @@ if(true) {
 // Chaves {} criam um escopo de bloco, não confundir com a criação de objetos = {}
 
 {
-  var carro = 'Fusca';
+  var carro2 = 'Monza';
   const ano = 2018;
 }
-console.log(carro); // Carro
+console.log(carro2); // Carro
 // console.log(ano); // erro ano is not defined
 
 
 
 console.log('//-----------------------------------------------------------------------------')
 
-// FOR LOOP
+// FOR LOOP COM VAR
 // Ao utilizar var dentro de um forloop, que é um bloco, o valor do variável utilizada irá vazar e existir fora do loop. 
 // Na maioria das vezes essa prática é desaconselhavel.
 
@@ -106,5 +106,19 @@ for(var i = 0; i < 10; i++) {
   console.log(`Número ${i}`);
 }
 console.log(i); // 10
+
+
+
+// FOR LOOP COM LET
+// Com o let evitamos que o número vaze.
+// Na grande maioria das vezes essa será a maneira sugerida de utilizar o for
+
+for(let i = 0; i < 10; i++) {
+  console.log(`Número ${i}`);
+}
+console.log(i); // i is not defined
+
+
+console.log('//-----------------------------------------------------------------------------')
 
 
