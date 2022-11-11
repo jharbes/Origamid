@@ -38,3 +38,17 @@ console.log(podeBeber) // Pode beber
 // condição ? true : false
 
 
+console.log('//-----------------------------------------------------------------------------')
+
+// IF ABREVIADO
+// Não é necessário abrir e fechar as chaves {} quando retornamos apenas uma linha de código
+
+var possuiFaculdade = true;
+if(possuiFaculdade) console.log('Possui faculdade');
+else console.log('Não possui faculdade');
+
+// ou
+if(possuiFaculdade)
+  console.log('Possui faculdade');
+else
+  console.log('Não possui faculdade');
