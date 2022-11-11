@@ -6,7 +6,7 @@ var brasilVencedorCopa=[1958,1962,1970,1994,2002]
 // Interaja com a array utilizando um loop, para mostrar
 // no console a seguinte mensagem, `O brasil ganhou a copa de ${ano}`
 
-brasilVencedorCopa.forEach((ano)=>{
+brasilVencedorCopa.forEach((ano,indice,array)=>{
     console.log(`O brasil ganhou a copa de ${ano}`)
 })
 
