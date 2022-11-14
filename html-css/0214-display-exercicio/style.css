@@ -2,5 +2,45 @@
 
 *{
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
+h1{
+    padding-top: 30px;
+}
+
+div{
+    text-align: left;
+    background-color: #111;
+    border-radius: 4px;
+    margin: 30px 200px 30px 200px;
+    padding-top: 5px;
+}
+
+h2{
+    color: white;
+    margin:30px;
+    text-align: left;
+}
+
+p{
+    color:#b2b2b2;
+    margin: 0px 0px 0px 30px;
+    text-align: left;
+}
+
+span{
+    color: #febe01;
+}
+a{
+    background-color: #febe01;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #332200;
+    margin: 30px;
+}
