@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+div{
+    background: #aaa;
+    width: 140px;  /* width por padrao sera 'auto' para display block */ 
+    color: rgb(111, 0, 255);
+}
