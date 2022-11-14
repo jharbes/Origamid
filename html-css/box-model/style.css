@@ -4,4 +4,18 @@ div{
     background: #aaa;
     width: 140px;  /* width por padrao sera 'auto' para display block */ 
     color: rgb(111, 0, 255);
+    padding: 30px;
+    border: 10px solid #111;
+    margin: 30px;
+}
+
+body{
+    margin: 0px;
+}
+
+h1{
+    background-color: #84e;
+    padding: 20px;
+    border:4px solid #111;
+    margin: 30px;
 }
