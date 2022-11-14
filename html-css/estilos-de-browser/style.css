@@ -2,7 +2,7 @@
 
 body{
     margin:0px;
-
+    color:darkmagenta;
 }
 
 h1,h2,p{
@@ -13,4 +13,8 @@ h1,h2,p{
 
 h1{
     color: seagreen;
+}
+
+a{
+    color: inherit; /* Serve pra acessar a cor de 'heranca' setada, nesse caso a cor do elemento body darkmagenta */
 }
