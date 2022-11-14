@@ -1,2 +1,6 @@
 @charset "UTF-8";
 
+h1{
+    background: #ddd;
+    width: 300px;
+}
