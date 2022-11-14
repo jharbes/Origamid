@@ -9,6 +9,12 @@ span,a,strong{
     border: 1px solid rgba(0,0,0,0.5);
 }
 
+a{ /* Elementos inline como a ou span não terão configurações de margem ou padding setados de maneira devida, para isso devem ser alterados para inline-block ou block */
+    padding: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
 div,h1,p{
     border: 1px solid rgba(255,0,0,0.5);
 }
