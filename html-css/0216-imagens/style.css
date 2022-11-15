@@ -1,2 +1,14 @@
 @charset "UTF-8";
 
+img{
+    max-width: 100%;
+    display: block; /* o display block para imagem retira o espaço existente por padrao entre as imagens */
+}
+
+section>img{
+    width: 100%;
+}
+
+div{
+    width: 200px;
+}
