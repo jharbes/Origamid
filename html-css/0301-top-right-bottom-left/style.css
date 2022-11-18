@@ -1,2 +1,14 @@
 @charset "UTF-8";
 
+span{
+    display: inline-block;
+    background: #ddd;
+}
+
+span{
+    padding: 30px;
+    padding: 20px 40px;
+    padding: 40px 100px 200px 10px; /* O ultimo padding se sobrepoe sobre todos os outros, se nao houver correspondencia para algum dos lados do padding nos ultimos paddings propostos ele permanece no que foi setado anteriormente */
+    border: 10px solid black;
+    border-width: 30px 60px; /* Importante mostrar que no atributo border simples não é possivel setar diferença entre as bordas de todos os lados, para isso usamos o border-width, também podemos usar border-top, border-left etc para cada lado da borda, inclusive alterando cor ou estilo de borda */
+}
