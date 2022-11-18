@@ -1,2 +1,11 @@
 @charset "UTF-8";
 
+h1{
+    text-align: center;
+}
+
+div.item{
+    background: #f7f7f7;
+    border: 1px solid #e7e7e7;
+}
+
