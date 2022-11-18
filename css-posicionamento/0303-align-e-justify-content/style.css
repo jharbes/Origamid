@@ -14,6 +14,8 @@ h1{
 
     grid-template-columns: 300px 300px 300px; /* Alteramos os valores da largura das colunas para que haja sobrar de espáço (diferente de como estava anteriormente com 1fr 1fr), assim poderemos efetuar o estudo dos alinhamentos align e justify */
 
+    /* grid template columns: auto auto; /* Nesse caso do valor padrao para tamanho das colunas (que é o default), ele utiliza o tamanho máximo do conteúdo que existe dentro da caixa para definir o tamanho dela, ou seja, textos grandes podem gerar aumento no tamanho da caixa. */
+
     gap:20px; /* Cria uma margem entre os elementos do grid, pra baixo e pros lados. (não para cima) */
 
     /* justify-content: center; /* Justifica no meio da tela */
