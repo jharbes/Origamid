@@ -8,10 +8,15 @@ h1{
     text-align: center;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%; /* Separa as colunas metade metade com a tela disponível */
+    gap:20px; /* Cria uma margem entre os elementos do grid, pra baixo e pros lados. (não para cima) */
+}
+
 div.item{
     background: #d7e9f5;
     border: 1px solid #e7e7e7;
-    margin-bottom: 20px;
     padding: 20px;
     border-radius: 4px;
 }
