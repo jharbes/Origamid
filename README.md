@@ -6,4 +6,4 @@
 <h3>Curso de UX/UI Designer e Desenvolvedor Front-End Origamid</h3>
 <br>
 
-Curso de Web Design, UX/UI Design, HTML, CSS, JavaScript e React da Origamid.com
+Curso de Web Design, UX/UI Design, HTML, CSS, JavaScript, Typescript, Bootstrap, React e Vuejs da Origamid.com
