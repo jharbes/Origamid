@@ -12,15 +12,32 @@ h1{
     display: grid;
     /* grid-template-columns: 50% 50%;  Separa as colunas metade metade com a tela disponível, não é muito interessante de ser usado pois se houver medida de distanciamento horizontal entre as colunas (como o gap) ele acaba criando uma barra de rolagem horizontal. */
 
-    grid-template-columns: 300px 300px 300px; /* Alteramos os valores da largura das colunas para que haja sobrar de espáço (diferente de como estava anteriormente com 1fr 1fr), assim poderemos efetuar o estudo dos alinhamentos align e justify */
+    /* grid-template-columns: 300px 300px 300px; /* Alteramos os valores da largura das colunas para que haja sobrar de espáço (diferente de como estava anteriormente com 1fr 1fr), assim poderemos efetuar o estudo dos alinhamentos align e justify */
 
-    /* grid template columns: auto auto; /* Nesse caso do valor padrao para tamanho das colunas (que é o default), ele utiliza o tamanho máximo do conteúdo que existe dentro da caixa para definir o tamanho dela, ou seja, textos grandes podem gerar aumento no tamanho da caixa. */
+    grid-template-columns: auto auto; /* Nesse caso do valor padrao para tamanho das colunas (que é o default), ele utiliza o tamanho máximo do conteúdo que existe dentro da caixa para definir o tamanho dela, ou seja, textos grandes podem gerar aumento no tamanho da caixa. */
 
     gap:20px; /* Cria uma margem entre os elementos do grid, pra baixo e pros lados. (não para cima) */
 
     /* justify-content: center; /* Justifica no meio da tela */
 
-    justify-content: end; /* Justifica no fim da tela */
+    /* justify-content: space-between; /* Gera um espaçamento igual entre as diversas colunas do grid. */
+
+    justify-content: space-evenly; /* Tenta gerar um espaçamento igual entre os items e a borda, nesse caso ele nao considera espaçamento duplo no meio e sim como se fosse apenas um, diferente do space-around.
+
+    /* justify-content: space-around; /* Gera espaçamento entre os itens e as bordas da tela tentando manter a uniformidade entre eles (observar que o espaçamento do meio é maior do que nas bordas pois é a soma de dois espaçamentos)
+
+    /* justify-content: end; /* Justifica no fim da tela */
+
+    height: 800px; /* O grid por padrão possui a altura de seus elementos, estamos, nesse caso a propriedade align (alinhamento vertical) não teria espaço para ser devidamente aplicada nos elementos, entao incluimos uma altura maior que os elementos em si para poder utilizar essa propriedade como demonstração. */
+
+    align-content: space-evenly; /* Define alinhamento na vertical, diferentemente do justify que define alinhamento horizontal. */
+
+    place-content: center space-evenly; /* esse atributo nada mais é do que um atalho para align-content e justify-content do css grid, nesse caso colocamos colocamos o atributo align content e depois o justify content (nessa ordem) utilizando apenas uma linha pra ambos *** SE COLOCARMOS APENAS UM ELE INDICARA ESSE VALOR PARA AMBOS OS ATRIBUTOS:
+    
+    Exemplo:
+    place-content: center; = place-content: center center;
+
+    */
 }
 
 div.item{
