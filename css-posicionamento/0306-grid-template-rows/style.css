@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+/*
+
+****SEMPRE IMPORTANTE****:: align funciona na vertical (EIXO Y) justify funciona na horizontal (EIXO X)!!!
+
+****PLACE ITEMS CONJUGA OS DOIS COMANDOS!!!  primeiro align e depois o justify, pode ser um atributo apenas que valha pelos dois.
+
+Essas propriedades funcionam alterando a posição da caixa que envolve o conteúdo, ou seja, o container, para alinhar apenas o conteúdo que está dentro da caixa devemos usar a propriedade text-align e nao as propriedades align e justify items.
+
+Para alterar um item apenas sem mexer com todo o grid utilizamos as propriedades align-self, justify-self ou place-self.
+
+*/
+
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; /* Utilizamos esse align-items:center; de maneira que os items não fiquem com seus containers simplesmente lado a lado mas sim coloque seu conteudo align ao centro do elemento ao lado. */
+    place-items: start end;
+}
+
+.foto{
+    grid-column: 1/-1;
+}
+
+.titulo{
+    grid-column: 2;
+    text-align: right; /* Alterando o posicionamento do CONTEÚDO e não do container em si que permanece com a posição inalterada. */
+}
+
+.preco{
+    place-self: start end;
+}
+
+.descricao{
+    text-align: right;
+}
+
+.comprar{
+    align-self: start;
+    text-align: center;
+}
+
+/* Estilos Gerais */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+}
+
+h1,p{
+    margin: 0px;
+}
+
+h1.assunto{
+    text-align: center;
+}
+
+h1{
+    font-size: 48px;
+    line-height: 1;
+}
+
+.preco{
+    background-color: #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+p,span{
+    font-size: 20px;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+a.comprar{
+    background: #2ba4f5;
+    color: #083350;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 20px;
+}
