@@ -1,45 +1,21 @@
 @charset "UTF-8";
 
-/*
-
-****SEMPRE IMPORTANTE****:: align funciona na vertical (EIXO Y) justify funciona na horizontal (EIXO X)!!!
-
-****PLACE ITEMS CONJUGA OS DOIS COMANDOS!!!  primeiro align e depois o justify, pode ser um atributo apenas que valha pelos dois.
-
-Essas propriedades funcionam alterando a posição da caixa que envolve o conteúdo, ou seja, o container, para alinhar apenas o conteúdo que está dentro da caixa devemos usar a propriedade text-align e nao as propriedades align e justify items.
-
-Para alterar um item apenas sem mexer com todo o grid utilizamos as propriedades align-self, justify-self ou place-self.
-
-*/
-
 .grid{
     display: grid;
     gap: 20px;
-    grid-template-columns: 1fr 1fr;
-    align-items: center; /* Utilizamos esse align-items:center; de maneira que os items não fiquem com seus containers simplesmente lado a lado mas sim coloque seu conteudo align ao centro do elemento ao lado. */
-    place-items: start end;
-}
+    grid-template-columns: repeat(2,1fr); /* Utilizamos a funcao repeat para evitar ficar repetindo diversas vezes o valor, principalmente quando forem muitos itens como mais de 10 colunas. */
 
-.foto{
-    grid-column: 1/-1;
-}
+    /* grid-template-rows: repeat(4,200px); /* Define o tamanho de cada linha do grid, seu default é auto para que se ajuste ao conteudo dos containers, a ordem inserida dos valores é a linha em questão a ter o seu valor alterado. */
 
-.titulo{
-    grid-column: 2;
-    text-align: right; /* Alterando o posicionamento do CONTEÚDO e não do container em si que permanece com a posição inalterada. */
+    /* grid-auto-rows: 200px; /* Define o tamanho de cada linha nova que surgir. (*** IMPORTANTE: entendemos linha nova que surgir como qualquer linha que nao tenha o seu valor setado por meio da propriedade grid-template-rows) */
 }
 
 .preco{
-    place-self: start end;
-}
+    /* Com o grid-column e grid-row nós forçamos um elemento a ficar em uma certa linha e/ou certa coluna, no exemplo abaixo forcamos o elemento a ficar na coluna 2 e linha 2. */
+    grid-row: 2;
+    grid-column: 2;
 
-.descricao{
-    text-align: right;
-}
-
-.comprar{
-    align-self: start;
-    text-align: center;
+    grid-area: 2/2; /* Idem aos anteriores, mas aqui conjugamos as duas propriedades em uma só (shorthand) sendo a primeira a linha e a segunda a coluna. */
 }
 
 /* Estilos Gerais */
