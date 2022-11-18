@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    /* grid-template-columns: 50% 50%;  Separa as colunas metade metade com a tela disponível, não é muito interessante de ser usado pois se houver medida de distanciamento horizontal entre as colunas (como o gap) ele acaba criando uma barra de rolagem horizontal. */
+
+    grid-template-columns: 1fr 1fr; /* O fr trata-se de uma unidade fracionaria que distribui o espaço que sobra entre os elementos, ao colocar 1fr 1fr ele distribui de forma igual entre os elementos presentes. Podemos alterar a proporção de tamanho entre as colunas caso mudemos os valores como por exemplo 1fr 2fr, onde a segunda coluna ficaria com o dobro do tamanho da primeira, dentro do espaço disponível que sobrar. */
+
+    gap:20px; /* Cria uma margem entre os elementos do grid, pra baixo e pros lados. (não para cima) */
+}
+
+div.item{
+    background: #d7e9f5;
+    border: 1px solid #e7e7e7;
+    padding: 20px;
+    border-radius: 4px;
+    display: grid; /* Quando definimos o display grid as margens param de colidir pois passam também a ter o proprio espaçamento do display grid, logo o espaçamento aumenta. */
+}
+
+h2{
+    margin-top: 0px;
+}
+
+a.comprar{
+    background: #2ba4f5;
+    color: #083350;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
