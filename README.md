@@ -1,4 +1,4 @@
-<img src="react.png" align="right" width="130">
+<img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original.svg" align="right" width="130">
 <img src="front-end.png" align="right" width="130">
 
 # Origamid
