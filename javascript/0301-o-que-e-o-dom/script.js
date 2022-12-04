@@ -11,3 +11,8 @@ const href=window.location.href // Nesse caso podemos nomear uma variavel ou con
 if (href==='http://127.0.0.1:5500/0301-o-que-e-o-dom/index.html')
     console.log('HREF é igual')
 
+const h1Selecionado=document.querySelector('h1') // inclui o h1 na constante h1Selecionado para que possamos utiliza-lo conforme necessario.
+
+document.body // retorna automaticamente todo o body do documento
+
+alert('teste') // observe que mesmo sendo utilizado sem o window ele funciona como um atalho
