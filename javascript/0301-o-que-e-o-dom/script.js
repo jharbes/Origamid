@@ -28,6 +28,9 @@ titulo.classList; // retorna as classes;
 titulo.id; // retorna o id;
 titulo.offsetHeight; // retorna a altura do elemento;
 
-titulo.addEventListener('click', callback);
+titulo.addEventListener('click', function(){
+    console.log('Clicou em ',h1Selecionado)
+    console.log('Clicou em ',h1Selecionado.innerText)
+});
 // ativa a função callback ao clicar no titulo (no caso o h1 selecionado por meio da constante titulo)
 
