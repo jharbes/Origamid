@@ -8,3 +8,6 @@ console.log(window.location.href) // Mostra, por exemplo, o endereco do site (se
 
 const href=window.location.href // Nesse caso podemos nomear uma variavel ou constante como um objeto e/ou atributo para melhor manipularmos ele
 
+if (href==='http://127.0.0.1:5500/0301-o-que-e-o-dom/index.html')
+    console.log('HREF é igual')
+
