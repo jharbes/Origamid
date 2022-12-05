@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.titulo{
+    text-shadow: 1px 1px 3px #FB5;
+}
+
+.dragoes h2{
+    font-size: 1.5rem;
+}
+
+.dragoes p {
+    line-height: 1.4;
+}
+
+.faq-lista dt{
+    font-size: 1.2rem;
+}
+
+.dados li{
+    font-weight: bold;
+}
+
+.copy p{
+    font-size: 1.5rem;
+}
+
+.faq-lista{
+    line-height: 1.4;
+}
