@@ -103,7 +103,7 @@ body{
 }
 
 .dragoes-lista{
-    height: 600px; /* original 370px */
+    height: 800px; /* original 370px */
     overflow-y: scroll;
     grid-column: 2;
 }

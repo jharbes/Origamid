@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 .titulo{
-    text-shadow: 1px 1px 3px #FB5;
+    text-shadow: 1px 1px 2px #FB5;
 }
 
 .dragoes h2{
     font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #E54;
 }
 
 .dragoes p {
