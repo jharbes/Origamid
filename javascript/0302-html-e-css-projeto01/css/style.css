@@ -101,3 +101,31 @@ body{
     margin-right: 10px;
     background: #FB5;
 }
+
+.dragoes-lista{
+    height: 370px;
+    overflow-y: scroll;
+    grid-column: 2;
+}
+
+.dragoes-lista::-webkit-scrollbar{
+    width: 18px;
+}
+
+.dragoes-lista::-webkit-scrollbar-thumb{
+    background:#FB5;
+    border-left: 4px solid #222;
+}
+
+.dragoes-lista::-webkit-scrollbar-track{
+    background: #222;
+}
+
+.dragoes-descricao{
+    grid-column: 3;
+}
+
+.dragoes-descricao section{
+    margin-bottom: 3rem;
+}
+
