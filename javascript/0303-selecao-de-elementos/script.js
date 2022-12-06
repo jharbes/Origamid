@@ -1,6 +1,45 @@
 // Seleciona pelo ID
-const animaisSection = document.getElementById('animais');
+const dragoesSection = document.getElementById('dragoes');
 const contatoSection = document.getElementById('contato');
 
 // Retorna null caso não exista
 const naoExiste = document.getElementById('teste');
+
+console.log(dragoesSection.innerText) // observe no modo console que irá retornar apenas o texto puro da secao dragoes
+
+console.log(naoExiste)
+
+
+
+/* getElementsByClassName e getElementsByTagName selecionam e retornam uma lista de elementos do DOM (todos que tiverem a classe inclusa ou forem da mesma tag). A lista retornada está ao vivo, significa que se elementos forem adicionados, ela será automaticamente atualizada. */
+
+// Seleciona pela classe, retorna uma HTMLCollection
+const gridSection = document.getElementsByClassName('grid-section');
+console.log(gridSection) // mostra que nesse caso retorna um array com todos os elementos que possuem a classe grid-section
+
+const contato = document.getElementsByClassName('grid-section contato'); // nesse caso serao adicionados os elementos que possuem AMBAS as classes
+
+// Seleciona todas as UL's, retorna uma HTMLCollection
+const ul = document.getElementsByTagName('ul');
+
+// Retorna o primeiro elemento
+console.log(gridSection[0]);
+
+
+/* 
+
+SELETOR GERAL ÚNICO
+querySelector retorna o primeiro elemento que combinar com o seu seletor CSS.
+
+IMPORTANTE*** usamos a selecao do query selector exatamente como fazemos com o CSS (. para classes, # para ids, etc)
+
+*/
+const animais = document.querySelector('.animais');
+const contato1 = document.querySelector('#contato');
+const ultimoItem = document.querySelector('.animais-lista li:last-child');
+const linkCSS = document.querySelector('[href^="https://"]');
+const primeiroUl = document.querySelector('ul');
+
+// Busca dentro do Ul apenas, ou seja, dentro de algum seletor previo
+const navItem = primeiroUl.querySelector('li');
+
