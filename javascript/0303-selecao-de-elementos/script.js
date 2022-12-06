@@ -111,3 +111,10 @@ gridSection2.forEach(function(gridItem, index, array) {
   console.log(index) // index do item na array
   console.log(array) // a array completa
 });
+
+
+const arrayGrid=Array.from(gridSectionHTML) // transforma o gridSectionHTML (HTML Collection) em um array com esse método
+
+arrayGrid.forEach((item,indice,array)=>{
+    console.log(item,indice)
+})
