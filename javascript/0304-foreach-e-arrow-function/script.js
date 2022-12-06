@@ -22,7 +22,7 @@ O primeiro parâmetro é o callback, ou seja, a função que será ativada a cad
 
 const imgs1 = document.querySelectorAll('img');
 
-imgs.forEach(function(item, index, array){ // IMPORTANTE!!! ****
+imgs1.forEach(function(item, index, array){ // IMPORTANTE!!! ****
   console.log(item); // o item atual no loop
   console.log(index); // o número do index
   console.log(array); // a Array completa
@@ -43,5 +43,21 @@ const titulos = document.getElementsByClassName('titulo');
 const titulosArray = Array.from(titulos);
 
 titulosArray.forEach(function(item){
+  console.log(item);
+});
+
+
+
+
+/*
+
+ARROW FUNCTION
+Sintaxe curta em relação a function expression. Basta remover a palavra chave function e adicionar a fat arrow => após os argumentos.
+
+*/
+
+const imgs2 = document.querySelectorAll('img');
+
+imgs2.forEach((item) => {
   console.log(item);
 });
