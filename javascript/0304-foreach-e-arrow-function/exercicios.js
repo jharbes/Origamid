@@ -54,6 +54,6 @@ imgs5.forEach(() => {
   console.log(j++);
 });
 
-j=0
+
 imgs5.forEach(() => j++);
 console.log(j)
