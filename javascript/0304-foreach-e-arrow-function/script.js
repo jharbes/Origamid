@@ -61,3 +61,52 @@ const imgs2 = document.querySelectorAll('img');
 imgs2.forEach((item) => {
   console.log(item);
 });
+
+
+
+/*
+
+PARÂMETROS E PARÊNTESES
+
+Particularidades da arrow function:
+- Caso haja apenas um argumento na funcao nao precisamos usar parenteses no argumento.
+
+Na dúvida é melhor usar os parenteses sempre.
+
+*/
+
+const imgs3 = document.querySelectorAll('img');
+
+// parâmetro único não precisa de parênteses
+imgs3.forEach(item => {
+  console.log(item);
+});
+
+// multiplos parâmetros precisam de parênteses
+imgs3.forEach((item, index) => {
+  console.log(item, index);
+});
+
+// sem parâmetro precisa dos parênteses, mesmo vazio
+let i = 0;
+imgs3.forEach(() => {
+  console.log(i++);
+});
+
+
+
+
+/*
+
+RETURN
+É possível omitir as chaves {} para uma função que retorna uma linha.
+
+*/
+
+const imgs4 = document.querySelectorAll('img');
+
+imgs4.forEach(item => 
+  console.log(item)
+);
+
+imgs4.forEach(item => console.log(item));
