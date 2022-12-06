@@ -49,3 +49,30 @@ console.log(dragoes.attributes['data-texto']) // utiliza-se dessa maneira quando
 
 
 
+/*
+
+GETATTRIBUTE E SETATTRIBUTE
+Métodos que retornam ou definem de acordo com o atributo selecionado
+
+É muito comum métodos de get e set;
+
+*/
+
+const img = document.querySelector('img'); // selecionando apenas o primeiro elemento
+
+img.getAttribute('src'); // valor do src
+img.setAttribute('alt', 'Texto Alternativo'); // muda o alt
+img.hasAttribute('id'); // true / false
+img.removeAttribute('alt'); // remove o alt
+
+img.setAttribute('alt','Caraxes') // define o atributo se nao existir, caso exista altera o ja existente
+
+img.hasAttributes(); // true / false se tem algum atributo
+
+console.log(img.getAttribute('src')) // valor do src
+console.log(img.getAttribute('alt'))
+console.log(img.setAttribute('alt', 'Texto Alternativo')) // muda o alt
+console.log(img.hasAttribute('id')) // true / false
+console.log(img.removeAttribute('alt')) // remove o alt
+
+console.log(img.hasAttributes()) // true / false se tem algum atributo
