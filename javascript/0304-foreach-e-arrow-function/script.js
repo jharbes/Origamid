@@ -101,6 +101,8 @@ imgs3.forEach(() => {
 RETURN
 É possível omitir as chaves {} para uma função que retorna uma linha.
 
+Não é permitido fechar a linha com ;
+
 */
 
 const imgs4 = document.querySelectorAll('img');
@@ -110,3 +112,17 @@ imgs4.forEach(item =>
 );
 
 imgs4.forEach(item => console.log(item));
+
+
+
+
+// Abaixo a mesma funcao apenas digitada de maneiras diferentes
+i=0
+imgs4.forEach(function(){
+    console.log(i++)
+})
+
+
+i=0
+imgs4.forEach(() => console.log(i++))
+
