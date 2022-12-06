@@ -13,6 +13,7 @@
     line-height: 1.4;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 0px 0px 1px #FB5;
+    text-align: justify;
 }
 
 .faq-lista dt{
@@ -23,6 +24,7 @@
 .faq-lista dd{
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 0px 0px 1px #FB5;
+    text-align: justify;
 }
 
 .dados li{
