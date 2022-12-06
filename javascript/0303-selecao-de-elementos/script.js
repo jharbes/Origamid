@@ -29,7 +29,7 @@ console.log(gridSection[0]);
 /* 
 
 SELETOR GERAL ÚNICO
-querySelector retorna o primeiro elemento que combinar com o seu seletor CSS.
+querySelector retorna o primeiro elemento que combinar com o seu seletor CSS. ou seja, apenas um, nao retorna um vetor de elementos.
 
 IMPORTANTE*** usamos a selecao do query selector exatamente como fazemos com o CSS (. para classes, # para ids, etc)
 
@@ -43,3 +43,26 @@ const primeiroUl = document.querySelector('ul');
 // Busca dentro do Ul apenas, ou seja, dentro de algum seletor previo
 const navItem = primeiroUl.querySelector('li');
 
+const primeiraLi=document.querySelector('li')
+console.log(primeiraLi)
+
+
+
+/*
+
+SELETOR GERAL LISTA
+
+querySelectorAll retorna todos os elementos compatíveis com o seletor CSS em uma NodeList (pode retornar um array caso hajam mais de um elemento com as condicoes citadas)
+
+Diferente do getElementsByClassName, a lista aqui é estática, ou seja, nao se atualiza automaticamente sozinha dinamicamente
+
+*/
+
+const gridSection1 = document.querySelectorAll('.grid-section');
+const listas = document.querySelectorAll('ul');
+const titulos = document.querySelectorAll('.titulo');
+const fotosAnimais = document.querySelectorAll('.animais-lista img');
+
+// Retorna o segundo elemento
+console.log(titulos)
+console.log(gridSection[1]);
