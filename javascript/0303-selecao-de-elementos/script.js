@@ -66,3 +66,48 @@ const fotosAnimais = document.querySelectorAll('.animais-lista img');
 // Retorna o segundo elemento
 console.log(titulos)
 console.log(gridSection[1]);
+
+
+
+
+
+/*
+
+HTMLCOLLECTION VS NODELIST
+A diferença está nos métodos e propriedades de ambas. Além disso a NodeList retornada com querySelectorAll é estática.
+
+Métodos GetElements -> HTML Collection
+
+Métodos QuerySelectorAll -> Node List
+
+*/
+
+const titulo = document.querySelector('.titulo');
+const gridSectionHTML = document.getElementsByClassName('grid-section');
+const gridSectionNode = document.querySelectorAll('.grid-section');
+
+// titulo.classList.add('grid-section');
+
+console.log(gridSectionHTML); // 4 itens apos a insercao do comando acima adicionando a classe grid-section
+console.log(gridSectionNode); // 3 itens permace com 3 itens mesmo apos a insercao do comando acima adicionando a classe grid section
+
+
+
+
+
+/*
+
+ARRAY-LIKE
+HTMLCollection e NodeList são array-like, parecem uma array mas não são. O método de Array forEach() por exemplo, existe apenas em NodeList.
+
+É possível transformar array-like em uma Array real, utilizando o método Array.from(gridSection)
+
+*/
+
+const gridSection2 = document.querySelectorAll('.grid-section');
+
+gridSection2.forEach(function(gridItem, index, array) {
+  gridItem.classList.add('azul');
+  console.log(index) // index do item na array
+  console.log(array) // a array completa
+});
