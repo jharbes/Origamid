@@ -76,3 +76,26 @@ console.log(img.hasAttribute('id')) // true / false
 console.log(img.removeAttribute('alt')) // remove o alt
 
 console.log(img.hasAttributes()) // true / false se tem algum atributo
+
+
+
+
+/*
+
+READ ONLY VS WRITABLE
+Existem propriedades que não permitem a mudança de seus valores, essas são considerados Read Only, ou seja, apenas leitura.
+
+Lembre-se que podemos modificar o valor de uma propriedade objeto.propriedade = ''
+
+*/
+
+const dragoes1 = document.querySelector('.dragoes');
+
+dragoes1.className; // string com o nome das classes
+dragoes1.className = 'azul'; // substitui completamente a string
+dragoes1.className += ' vermelho'; // adiciona vermelho à string
+
+dragoes1.className='grid-section dragoes'
+
+// dragoes1.attributes = 'class="ativo"'; // não funciona, read-only *****
+
