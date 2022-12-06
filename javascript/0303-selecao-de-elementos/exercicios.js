@@ -5,12 +5,12 @@ console.log(document.querySelectorAll('img'))
 
 // Retorne no console apenas as imagens que começaram com a palavra imagem
 
-const imagensImg=document.querySelectorAll([source="img"])
+const imagensImg=document.querySelectorAll('[src^="img/caraxes"]')
 console.log(imagensImg)
 
 // Selecione todos os links internos (onde o href começa com #)
 
-const linksInternos=document.querySelectorAll([href="#"])
+const linksInternos=document.querySelectorAll('[href^="#"]') // o acento representa que ele quer que veja apenas o comeco, sem o acento ^ seria o nome exato
 console.log(linksInternos)
 
 // Selecione o primeiro h2 dentro de .dragoes-descricao
