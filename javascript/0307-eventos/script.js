@@ -103,6 +103,52 @@ const linkExterno = document.querySelector('a[href^="http"]');
 function clickNoLink(event) {
   event.preventDefault();
   console.log(event.currentTarget.href);
+  console.log(this)
 }
 
 linkExterno.addEventListener('click', clickNoLink);
+
+
+
+
+/*
+
+THIS
+A palavra chave this é uma palavra especial de JavaScript, que pode fazer referência a diferentes objetos dependendo do contexto. No caso de eventos, ela fará referência ao elemento em que addEventListener foi adicionado.
+
+Geralmente igual ao event.currentTarget
+
+*/
+
+const dragoesDescricao = document.querySelector('.dragoes-descricao');
+
+function callback3(event) {
+    console.log(this); // retorna a imagem (objeto img3)
+    console.log(this.getAttribute('src'));
+}
+
+dragoesDescricao.addEventListener('click', callback3);
+
+
+
+
+/*
+
+DIFERENTES EVENTOS
+Existem diversos eventos como click, scroll, resize, keydown, keyup, mouseenter e mais. Eventos podem ser adicionados a diferentes elementos, como o window e document também.
+
+https://developer.mozilla.org/en-US/docs/Web/Events
+
+*/
+
+const h1 = document.querySelector('h1');
+
+function callback4(event) {
+  console.log(event.type, event);
+}
+
+h1.addEventListener('click', callback4);
+h1.addEventListener('mouseenter', callback4);
+window.addEventListener('scroll', callback4);
+window.addEventListener('resize', callback4);
+window.addEventListener('keydown', callback4);
