@@ -19,6 +19,10 @@
     background: teal;
 }
 
+.texto-maior{
+    font-size: 150%;
+}
+
 img{
     display: block;
     max-width: 100%;
