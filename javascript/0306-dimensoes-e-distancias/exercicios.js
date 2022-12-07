@@ -38,7 +38,7 @@ todosLinks.forEach((item,index)=>{
 // Se o browser for menor que 720px,
 // adicione a classe menu-mobile ao menu
 
-const telaLimite=window.matchMedia('(max-width: 720px')
+const telaLimite=window.matchMedia('(max-width: 720px)')
 
 
 if (telaLimite.matches)
