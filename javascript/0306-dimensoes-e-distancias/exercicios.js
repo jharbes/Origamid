@@ -1,7 +1,7 @@
 // Verifique a distância da primeira imagem
 // em relação ao topo da página
 
-console.log(document.querySelector('img').offsetTop)
+console.log('distância da primeira imagem em relação ao topo da página '+document.querySelector('img').offsetTop)
 
 
 
@@ -15,7 +15,7 @@ todasImagens.forEach((item,index)=>{
     somaWidth+=item.getBoundingClientRect().width
 })
 
-console.log(somaWidth)
+console.log('soma da largura de todas as imagens '+somaWidth)
 
 
 
@@ -37,3 +37,9 @@ todosLinks.forEach((item,index)=>{
 
 // Se o browser for menor que 720px,
 // adicione a classe menu-mobile ao menu
+
+const telaLimite=window.matchMedia('(max-width: 720px')
+
+
+if (telaLimite.matches)
+    document.querySelector('.menu').classList.add('menu-mobile')
