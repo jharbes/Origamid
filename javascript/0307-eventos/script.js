@@ -148,7 +148,27 @@ function callback4(event) {
 }
 
 h1.addEventListener('click', callback4);
-h1.addEventListener('mouseenter', callback4);
-window.addEventListener('scroll', callback4);
-window.addEventListener('resize', callback4);
-window.addEventListener('keydown', callback4);
+h1.addEventListener('mouseenter', callback4); // mouse entrando no objeto
+window.addEventListener('scroll', callback4); // rolando a barra de rolagem
+window.addEventListener('resize', callback4); // mudando o navegador de tamanho
+window.addEventListener('keydown', callback4); // apertou alguma teclado do teclado
+
+
+
+
+/*
+
+KEYBOARD
+Você pode adicionar atalhos para facilitar a navegação no seu site, através de eventos do keyboard.
+
+*/
+
+function handleKeyboard(event) {
+    if(event.key === 'a')
+      document.body.classList.toggle('azul');
+    else if(event.key === 'v')
+      document.body.classList.toggle('vermelho');
+  }
+  
+  window.addEventListener('keydown', handleKeyboard);
+  
