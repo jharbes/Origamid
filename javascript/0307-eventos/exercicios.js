@@ -4,6 +4,19 @@
 // o comportamento padrão desses links
 
 
+const linksInternos=document.querySelectorAll('a[href^="#"]')
+
+function toogleAtivo(event){
+    event.currentTarget.classList.toggle('ativo')
+    event.preventDefault()
+}
+
+linksInternos.forEach(item=>{
+    item.addEventListener('click',toogleAtivo)
+})
+
+
+
 // Selecione todos os elementos do site começando a partir do body,
 // ao clique mostre exatamente quais elementos estão sendo clicados
 
