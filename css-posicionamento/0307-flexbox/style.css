@@ -8,13 +8,23 @@ body{
     display: flex;
     gap: 20px; /* distancia entre os containers */
     flex-wrap: wrap; /* permite que ele coloque elementos em outra linha caso falte espaco, importante para impedir que estore a janela e crie barra de rolagem horizontal */
-    justify-content: center; /* Assim como no grid ele permite justificar os elementos horizontalmente de acordo com o justify escolhido */
-    align-content: center;
+    /* justify-content: center; /* Assim como no grid ele permite justificar os elementos horizontalmente de acordo com o justify escolhido */
+    /* align-content: center;
     background-color: darkgreen;
     /* place-content: center; /* atalho para justify content e align content */
 }
 
 h2{
+    /* Propriedade flex: Uma propriedade do item flexivel, ou seja, que está dentro da flexbox, nesse caso o h2 */
+
+    flex-grow: 1; /* Força distribuir o espaço livre pelos elementos que estao no flexbox, todos eles aumentam para ocupar os espaços
+     disponiveis */
+    
+    flex-basis: 0; /* Padrao da propriedade = auto, valor = 0: essa propriedade tenta igualar o tamanho de todas as flexbox dentro do container. 
+    Podemos também definir um valor mínimo como  flex-basis: 200px; */
+
+    flex-shrink: ; /* Padrao da propriedade = 1, responde se o elemento poderá ser encolhido ou não depende do valor setado. valor =0 nao permite a quebra das palavras */
+
     background-color: deepskyblue;
     border: 1px solid black;
     padding: 20px;
