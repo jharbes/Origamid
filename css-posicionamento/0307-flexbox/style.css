@@ -23,7 +23,9 @@ h2{
     flex-basis: 0; /* Padrao da propriedade = auto, valor = 0: essa propriedade tenta igualar o tamanho de todas as flexbox dentro do container. 
     Podemos também definir um valor mínimo como  flex-basis: 200px; */
 
-    flex-shrink: ; /* Padrao da propriedade = 1, responde se o elemento poderá ser encolhido ou não depende do valor setado. valor =0 nao permite a quebra das palavras */
+    flex-shrink: 0; /* Padrao da propriedade = 1, responde se o elemento poderá ser encolhido ou não depende do valor setado. valor =0 nao permite a quebra das palavras */
+
+    flex: 1; /* Atalho para os elementos flex-grow, flex-basis e flex-shrink (shortcut), flex =1 atalho para flex-grow:1; flex-shrink:1; flex-basis:0%; */
 
     background-color: deepskyblue;
     border: 1px solid black;
