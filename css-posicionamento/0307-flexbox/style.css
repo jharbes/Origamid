@@ -21,13 +21,13 @@ h1{
 h2{
     /* Propriedade flex: Uma propriedade do item flexivel, ou seja, que está dentro da flexbox, nesse caso o h2 */
 
-    /* flex-grow: 1; /* Força distribuir o espaço livre pelos elementos que estao no flexbox, todos eles aumentam para ocupar os espaços
-     disponiveis */
+    /* flex-grow: 1; /* Força distribuir o espaço livre da linha pelos elementos que estao no flexbox, todos eles aumentam para ocupar os espaços
+     disponiveis e ocupar a linha toda, opcoes 1 (ligado) ou 0 (desligado) */
     
     /* flex-basis: 0; /* Padrao da propriedade = auto, valor = 0: essa propriedade tenta igualar o tamanho de todas as flexbox dentro do container. 
     Podemos também definir um valor mínimo como  flex-basis: 200px; */
 
-    /* flex-shrink: 0; /* Padrao da propriedade = 1, responde se o elemento poderá ser encolhido ou não depende do valor setado. valor =0 nao permite a quebra das palavras */
+    /* flex-shrink: 0; /* Padrao da propriedade = 1, responde se o elemento poderá ser encolhido ou não depende do valor setado. valor =0 nao permite a quebra das palavras - valor =1 permite a quebra de palavras */
 
     /* flex: 1; /* Atalho para os elementos flex-grow, flex-basis e flex-shrink (shortcut), flex =1 atalho para flex-grow:1; flex-shrink:1; flex-basis:0%; */
 
