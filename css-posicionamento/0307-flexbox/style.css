@@ -43,7 +43,9 @@ h2{
 flex vs grid
 Use ambos no seu layout, eles resolvem problemas diferentes. O grid te dá controle em todos os eixos e o flexbox apenas no total de itens por linha.
 
-Colunas serao melhor organizadas em colunas e flex em linhas
+O grid funciona pensando sempre em colunas, o flex nao possui colunas em sua configuracao
+
+Colunas serao melhor organizadas em grid e linhas em flex
 
 */
 
@@ -51,5 +53,5 @@ Colunas serao melhor organizadas em colunas e flex em linhas
     margin-top: 60px;
     display: grid;
     gap:20px;
-    grid-template-columns: repeat(auto-fit,minmax(150px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(150px,auto)); /* Configuracao do grid onde ele so criará colunas caso seja necessário, não fica com numero de colunas fixas como na configuracao basica de grid. */
 }
