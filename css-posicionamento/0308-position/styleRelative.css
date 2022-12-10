@@ -6,12 +6,13 @@ div{
     padding: 20px 20px 40px 20px;
 }
 
-p{
-    background-color: dimgrey;
-    border: 1px solid black;
-    padding: 20px;
-    font-size: 20px;
-    margin: 0px;
+span{
+    background-color: lightgray;
+    border: 2px solid black;
+    padding: 10px;
+    position: relative; /* Nesse caso a posicao é relativa, ou seja, relativa a posicao inicial onde ele está e nao à tela total, colocando o top em top:-20px; reparamos que ele sobe em 20px a posicao com referencia inicial sua posicao original 
+    *** Observacao: O elemento continua ocupando o espaço inicial reservado a ele. */
+    top: -20px; /* Opcoes top, bottom, left e right */
 }
 
 .fixo{
