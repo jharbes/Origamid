@@ -1,26 +1,22 @@
 @charset "UTF-8";
 
 
-/*
-
-position: absolute;
-
-É posicionado conforme o elemento pai (se este estiver com um posicionamento diferente de static) e remove o elemento do fluxo padrão.
-
-*/
-
-div{
-    margin-top: 40px;
-    border: 2px solid #CCC;
-    padding: 20px 20px 40px 20px;
-    position: relative;
+h1 {
+  margin: 0px;
+  padding: 10px;
+  background: lightblue;
 }
 
-span{
-    background-color: lightgray;
-    border: 2px solid black;
-    padding: 10px;
-    position: absolute; /* Nesse caso a posicao é relativa, ou seja, relativa a posicao inicial onde ele está e nao à tela total, colocando o top em top:-20px; reparamos que ele sobe em 20px a posicao com referencia inicial sua posicao original 
-    *** Observacao: O elemento continua ocupando o espaço inicial reservado a ele. */
-    top: -20px; /* Opcoes top, bottom, left e right */
+.index1 {
+  position: relative;
+  background: greenyellow;
+  top: 40px;
+  z-index: 1; /* Nesse caso ele fica a frente de todos os elementos como se fosse uma folha de papel por cima das outras */
+}
+
+.index2 {
+  position: relative;
+  background: lightcoral;
+  top: -40px;
+  z-index: -1; /* Nesse caso eh o inverso do exemplo acima, ele fica por baixo dos outros elementos */
 }
