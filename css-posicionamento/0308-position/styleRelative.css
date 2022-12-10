@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+div{
+    margin-top: 40px;
+    border: 2px solid #CCC;
+    padding: 20px 20px 40px 20px;
+}
+
+p{
+    background-color: dimgrey;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.fixo{
+    position: fixed; /* Define uma posicao fixa para o elemento, as propriedades abaixo top, bottom, left e right vao definir a posicao fixa que o elemento vai estar. */
+    top: 20px; /* Top e bottom nao podem ser usados em conjunto (diferente de left e right), temos que escolher um dos dois para fazer uso. */
+
+
+    left: 20px; /* Podemos usar os atributos left e right em conjunto, cada um deles eh a distancia que o elemento vai ter do canto da tela esquerda ate sua posicao (left) ou do canto da tela direita ao elemento (right). Se usarmos os dois o elemento será esticado para atender a ambas as propriedades. */
+    right: 20px;
+}
