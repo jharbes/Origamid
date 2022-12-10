@@ -19,3 +19,25 @@ Vantagens Bikcraft: 64px
 conteúdo principal: máximo 1000px
 
 */
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header h1{
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+main{
+    display: grid;
+}
