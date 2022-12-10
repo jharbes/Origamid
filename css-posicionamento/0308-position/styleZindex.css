@@ -8,7 +8,7 @@ h1 {
 }
 
 .index1 {
-  position: relative;
+  position: relative; /* Toda vez que mudamos o posicionamento o elemento também muda o eixo de profundidade, ficando assim por cima de outros elementos, *** IMPORTANTE: quando dois elementos estiverem na mesma profundidade o elemento de baixo tem prioridade sobre o elemento de cima ficando por cima, mesmo no mesmo valor de profundidade.  */
   background: greenyellow;
   top: 40px;
   z-index: 1; /* Nesse caso ele fica a frente de todos os elementos como se fosse uma folha de papel por cima das outras */
