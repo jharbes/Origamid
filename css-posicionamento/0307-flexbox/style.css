@@ -4,10 +4,14 @@ body{
     margin: 0px;
 }
 
+h1{
+    text-align: center;
+}
+
 .flex{
     display: flex;
-    gap: 20px; /* distancia entre os containers */
-    flex-wrap: wrap; /* permite que ele coloque elementos em outra linha caso falte espaco, importante para impedir que estore a janela e crie barra de rolagem horizontal */
+    gap: 20px; /* distancia entre os containers, evita a utilizacao de margin para esse fim */
+    flex-wrap: wrap; /* permite que ele coloque elementos em outra linha caso falte espaco, **** importante para impedir que estoure a janela e crie barra de rolagem horizontal */
     justify-content: center; /* Assim como no grid ele permite justificar os elementos horizontalmente de acordo com o justify escolhido */
     /* align-content: center;
     background-color: darkgreen;
