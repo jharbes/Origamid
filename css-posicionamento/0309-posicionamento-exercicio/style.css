@@ -29,17 +29,19 @@ body{
     background-color: #f7f7f7;
 }
 
-header h1{
+header{
     text-align: center;
-    padding: 20px 0px 0px 0px;
-    font-size: 36px;
+}
+
+header img{
+    margin: 50px 0px 20px 0px;
 }
 
 nav{
     display: flex;
     justify-content: center;
-    gap: 70px;
-    padding: 40px 0px 70px 0px;
+    gap: 80px;
+    padding: 40px 0px 50px 0px;
 }
 
 nav a{
@@ -56,6 +58,11 @@ main{
     margin: 0 auto;
 }
 
+section h2{
+    font-size: 32px;
+}
+
+
 .text-right{
     text-align: right;
 }
@@ -63,6 +70,18 @@ main{
 .item{
     padding: 20px;
     align-self: center;
+}
+
+.item p{
+    font-size: 20px;
+}
+
+.botao{
+    padding: 15px 30px 15px 30px;
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    text-decoration: none;
 }
 
 img{
@@ -84,4 +103,8 @@ footer{
 footer p{
     text-align: center;
     font-size: 20px;
+}
+
+@media screen {
+    
 }
