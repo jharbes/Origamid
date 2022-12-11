@@ -64,7 +64,7 @@ main{
     height: 5px;
 }
 
-section h2{
+section h1{
     font-size: 32px;
 }
 
@@ -117,7 +117,7 @@ aside h3{
 }
 
 aside p{
-    grid-column: 2/3;
+    grid-column: 2;
 }
 
 footer{
