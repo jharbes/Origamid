@@ -34,7 +34,7 @@ header{
 }
 
 header img{
-    margin: 50px 0px 20px 0px;
+    margin: 60px 0px 20px 0px;
 }
 
 nav{
@@ -80,6 +80,7 @@ section h1{
 
 .item p{
     font-size: 20px;
+    margin: 0px;
 }
 
 .botao{
@@ -90,9 +91,8 @@ section h1{
     text-decoration: none;
 }
 
-img{
+#bicicleta-img{
     max-width: 100%;
-    padding: 20px;
 }
 
 article{
@@ -110,6 +110,8 @@ aside{
 
 aside img{
     grid-column: 1;
+    max-width: 100%;
+    padding: 20px;
 }
 
 aside h3{
