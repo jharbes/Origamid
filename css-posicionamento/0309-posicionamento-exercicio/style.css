@@ -28,16 +28,26 @@ body{
     padding: 0px;
 }
 
+.back-cinza-fundo{
+    background-color: #f7f7f7;
+}
 
 header h1{
     text-align: center;
+    padding: 20px 0px 0px 0px;
+    font-size: 36px;
 }
 
 nav{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 70px;
+    padding: 40px 0px 70px 0px;
+}
 
+nav a{
+    text-decoration: none;
+    color: black;
 }
 
 main{
@@ -48,7 +58,12 @@ main{
     margin: 0 auto;
 }
 
+.text-right{
+    text-align: right;
+}
+
 .item{
+    padding: 20px;
 }
 
 img{
