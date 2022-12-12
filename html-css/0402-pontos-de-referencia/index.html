@@ -8,11 +8,19 @@
     <title>Pontos de Referência</title>
 </head>
 <body>
-    <nav aria-label="primária"> <!-- atributo "aria" é bem focado em acessibilidade, dá uma etiqueta para a tag em questão, nesse caso exemplificado estaria dizendo que essa é a tag de navegacao primaria -->
-        <a href="/">Sobre</a>
-        <a href="/">Produtos</a>
-        <a href="/">Contato</a>
-    </nav>
+    <header> <!-- A tag <header> marca o cabeçalho do site (banner), onde geralmente estão presentes a marca, navegação do site e as vezes uma informação introdutória. 
+        
+                    Exemplos: Pode também ser utilizada para marcar o cabeçalho de regiões como o título de um artigo, data, autor e outras informações.
+
+                    Observação: Apenas cria uma landmark se não estiver dentro de main, section, article ou aside.-->
+
+        <nav aria-label="primária"> <!-- atributo "aria" é bem focado em acessibilidade, dá uma etiqueta para a tag em questão, nesse caso exemplificado estaria dizendo que essa é a tag de navegacao primaria -->
+            <a href="/">Sobre</a>
+            <a href="/">Produtos</a>
+            <a href="/">Contato</a>
+        </nav>
+
+    </header>
 
     <main>
         <h1>Nimbus Stark</h1>
@@ -31,5 +39,14 @@
         <h2>Sobre a Surfboard</h2>
         <p>A empresa foi fundada em 2014</p>
     </section>
+
+    <aside> <!-- A tag aside é utilizada para marcar conteúdo complementar ao principal do site. 
+                Exemplos: Lista de posts mais visitados, informações extras como a descrição de um termo usado no artigo e mais. -->
+        <h3>Posts Relacionados</h3>
+        <a href="/">Como aprender CSS</a>
+        <a href="/">Como aprender HTML</a>
+    </aside>
+
+
 </body>
 </html>
