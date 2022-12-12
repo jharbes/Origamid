@@ -148,6 +148,12 @@ footer p{
     font-size: 20px;
 }
 
-@media screen {
+@media (max-width:900px) {
+    main{
+        grid-template-columns: 1fr;
+    }
     
+    #retangulo-vermelho{
+        display: none;
+    }
 }
