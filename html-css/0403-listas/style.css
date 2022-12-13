@@ -8,3 +8,18 @@ h1#principal{
 hr{
     margin-bottom: 40px;
 }
+
+/* REMOVENDO ESTILO DA LISTA:
+
+ul,ol{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+dl,dd{
+    margin: 0px;
+}
+
+*/
+
