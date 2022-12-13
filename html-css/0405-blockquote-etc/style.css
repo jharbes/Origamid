@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+h1#principal{
+    text-align: center;
+    margin: 40px;
+}
+
+hr{
+    margin-bottom: 40px;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap:20px;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(147, 171, 216);
+    padding: 10px 20px;
+    display: block;
+    color: whitesmoke;
+    text-shadow: 1px 1px 5px black;
+}
