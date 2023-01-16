@@ -121,8 +121,33 @@ Podemos criar novos elementos com o método createElement()
 
 const dragoes = document.querySelector('.dragoes');
 
-const novoH1 = document.createElement('h1');
-novoH1.innerText = 'Novo Título';
-novoH1.classList.add('titulo');
+const novoH1 = document.createElement('h1'); // cria uma nova tag do tipo <h1>
 
-dragoes.appendChild(novoH1);
+novoH1.innerText = 'Novo Título'; // inclui o texto na nova tag criada do tipo <h1>
+
+novoH1.classList.add('titulo'); // adiciona a classe 'titulo' para a nova tag <h1> criada
+
+dragoes.appendChild(novoH1); // inclui o novo elemento criado novoH1 no fim do elemento dragoes, como ultimo filho (porem dentro do elemento dragoes)
+
+
+
+
+/*
+
+Clonar Elementos
+
+Todo elemento selecionado é único. Para criarmos um novo elemento baseado no anterior, é necessário utilizar o método cloneNode()
+
+true sinaliza para incluir os filhos
+
+*/
+
+const titulo1 = document.querySelector('h1');
+const titulo2 = document.querySelector('h1');
+const novoTitulo = titulo1;
+// titulo, titulo2 e novoTitulo são iguais, nesse caso as tres variaveis estao apontando para o mesmo elemento, ou seja, alterar uma delas ira alterar todas e o mesmo elemento no documento html
+
+const cloneTitulo = titulo1.cloneNode(true); // nesse caso ele ira incluir todos os elementos internos do elemento
+
+const contato1 = document.querySelector('.contato');
+contato1.appendChild(cloneTitulo); // agora ele vai incluir como ultimo elemento de contato1 o titulo que foi clonado
