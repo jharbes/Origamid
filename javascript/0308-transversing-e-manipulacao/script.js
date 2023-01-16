@@ -8,6 +8,7 @@ Propriedades que retornam uma string contendo o html ou texto. É possível atri
 
 const menu = document.querySelector('.menu');
 
+
 menu.outerHTML; // todo o html do elemento, inclusive as tags e configuracoes
 console.log(menu.outerHTML)
 
@@ -78,4 +79,50 @@ lista1.previousElementSibling; // elemento acima
 lista1.previousSibling; // node acima
 
 lista1.firstChild; // primeiro node child
+console.log(lista1.firstChild)
+
 lista1.childNodes; // todos os node child
+console.log(lista1.childNodes)
+
+
+
+/*
+
+Manipulando Elementos
+
+É possível mover elementos no dom com métodos de Node.
+
+*/
+
+const lista2 = document.querySelector('.dragoes-descricao');
+const contato = document.querySelector('.contato');
+const titulo = contato.querySelector('.titulo');
+const mapa=document.querySelector('.mapa')
+console.log(titulo)
+
+contato.appendChild(lista2) // move lista para o final de contato
+
+contato.insertBefore(lista2, titulo); // insere a lista antes de titulo, isso tudo DENTRO DA TAG CONTATO
+
+contato.removeChild(titulo); // remove titulo de contato
+
+contato.replaceChild(lista2, mapa); // substitui mapa por lista2
+
+
+
+
+/*
+
+Novos Elementos
+
+Podemos criar novos elementos com o método createElement()
+
+*/
+
+const dragoes = document.querySelector('.dragoes');
+
+const novoH1 = document.createElement('h1');
+novoH1.innerText = 'Novo Título';
+novoH1.classList.add('titulo');
+
+dragoes.appendChild(novoH1);
