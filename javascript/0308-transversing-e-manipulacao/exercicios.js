@@ -1,23 +1,26 @@
 // Duplique o menu e adicione ele em copy
 
-const copy=document.querySelector('.menu').cloneNode(true)
+const menu=document.querySelector('.menu')
+const copy=document.querySelector('.copy')
+
+const cloneMenu=menu.cloneNode(true)
+
+copy.appendChild(cloneMenu)
 
 // Selecione o primeiro DT da dl de Faq
 
-const primeiroDt=document.querySelector('.faq-lista').children[0]
+const faq=document.querySelector('.faq')
+const primeiroDt=faq.querySelector('dt')
 
 
 // Selecione o DD referente ao primeiro DT
 
 const ddDoPrimeiroDt=primeiroDt.nextElementSibling
+console.log(ddDoPrimeiroDt)
 
 
 // Substitua o conteúdo html de .faq pelo de .dragoes
 
-const docFaq=document.querySelector('.faq')
-const tituloFaq=docFaq.querySelector('.titulo')
-const faqLista=docFaq.querySelector('.faq-lista')
 const dragoes=document.querySelector('.dragoes')
 
-docFaq.removeChild(tituloFaq)
-docFaq.replaceChild(dragoes,faqLista)
+faq.innerHTML=dragoes.innerHTML
