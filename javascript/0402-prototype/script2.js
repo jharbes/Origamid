@@ -60,3 +60,51 @@ Object.getOwnPropertyNames(Array);
 console.log(Object.getOwnPropertyNames(Array))
 Object.getOwnPropertyNames(Array.prototype);
 console.log(Object.getOwnPropertyNames(Array.prototype))
+
+
+
+
+/*
+
+APENAS OS MÉTODOS DO PROTÓTIPO SÃO HERDADOS
+
+*/
+
+// [1,2,3].slice(); // existe
+// [1,2,3].from(); // não existe
+
+
+
+
+/*
+
+ENTENDA O QUE ESTÁ SENDO RETORNADO
+Os métodos e propriedades acessado com o . são referentes ao tipo de dados que é retornado antes desse .
+
+Verifique o nome do construtor com .constructor.name
+
+*/
+
+const Carro = {
+  marca: 'Ford',
+  preco: 2000,
+  acelerar() {
+    return true;
+  }
+}
+
+Carro // Object
+console.log(Carro)
+Carro.marca // String
+console.log(Carro.marca)
+Carro.preco // Number
+console.log(Carro.preco)
+Carro.acelerar // Function
+console.log(Carro.acelerar)
+Carro.acelerar() // Boolean
+console.log(Carro.acelerar())
+Carro.marca.charAt // Function
+console.log(Carro.marca.charAt)
+Carro.marca.charAt(0) // String
+console.log(Carro.marca.charAt(0))
+
