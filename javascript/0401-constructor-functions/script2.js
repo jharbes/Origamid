@@ -103,8 +103,8 @@ function Dom3(seletor) {
   }
   
   const lista3 = new Dom3('ul');
-  lista3.ativo('ativo');
+  lista3.ativo('ativo5');
   
   const lastLi3 = new Dom3('li:last-child');
-  lastLi3.ativo('ativo');
+  lastLi3.ativo('ativo5');
   
