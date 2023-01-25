@@ -41,3 +41,70 @@ Dom.ativo(); // adiciona ativo ao li
 Dom.seletor = 'ul';
 Dom.ativo(); // adiciona ativo ao ul
 
+
+/*
+
+CONSTRUCTOR FUNCTION REAL
+Um objeto criado com uma Constructor, não irá influenciar em outro objeto criado com a mesma Constructor.
+
+*/
+
+function Dom1() {
+  this.seletor = 'li';
+  const element = document.querySelector(this.seletor);
+  this.ativo = function() {
+    element.classList.add('ativo');
+  };
+}
+
+const lista = new Dom1();
+console.log(lista) // retornara o elemento li
+lista.seletor = 'ul';
+lista.ativo();
+console.log(lista) // retornara o elemento ul
+
+const lastLi = new Dom1();
+lastLi.seletor = 'li:last-child';
+lastLi.ativo();
+
+
+
+// versao funcional do construtor
+function Dom2(seletor) {
+    this.element = function(){
+        return document.querySelector(seletor);
+    }
+    this.ativar = function() {
+      this.element().classList.add('ativar');
+    };
+}
+
+const li=new Dom2('li')
+const ul=new Dom2('ul')
+
+const liLastChild=new Dom2('li:last-child')
+console.log(liLastChild)
+liLastChild.ativar()
+
+
+
+
+/*
+
+LEMBRE-SE DE USAR PARÂMETROS
+
+*/
+
+function Dom3(seletor) {
+    const element = document.querySelector(seletor);
+    this.ativo = function(classe) {
+      element.classList.add(classe);
+    };
+  }
+  
+  const lista3 = new Dom3('ul');
+  lista3.ativo('ativo');
+  
+  const lastLi3 = new Dom3('li:last-child');
+  lastLi3.ativo('ativo');
+  
