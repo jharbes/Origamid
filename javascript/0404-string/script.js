@@ -89,3 +89,77 @@ fruta.includes(listaFrutas); // false
 
 
 
+/*
+
+STR.ENDSWITH(SEARCH) E STR.STARTSWITH(SEARCH)
+Procura pela string exata dentro de outra string. A procura é case sensitive.
+
+*/
+
+const fruta1 = 'Banana';
+
+fruta.endsWith('nana'); // true
+fruta.startsWith('Ba'); // true
+fruta.startsWith('na'); // false
+
+console.log(fruta.endsWith('nana'))
+console.log(fruta.startsWith('na'))
+
+
+
+
+/*
+
+STR.SLICE(START, END)
+Corta a string de acordo com os valores de start e end.
+
+*/
+
+const transacao1 = 'Depósito de cliente';
+const transacao2 = 'Depósito de fornecedor';
+const transacao3 = 'Taxa de camisas';
+
+transacao1.slice(0, 3); // Dep
+console.log(transacao1.slice(0, 3))
+transacao2.slice(0, 3); // Dep
+transacao3.slice(0, 3); // Tax
+
+transacao1.slice(12); // cliente  => vai do index 12 em diante
+transacao1.slice(-4); // ente  => anda 4 indices pra tras
+transacao1.slice(3, 6); // ósi
+transacao3.slice(0,-2) // Taxa de camis  => corta os dois ultimos caracteres
+console.log(transacao3.slice(0,-2))
+
+
+
+
+/*
+
+STR.SUBSTRING(START, END)
+Corta a string de acordo com os valores de start e end. Não funcionar com valores negativos como o slice.
+
+Quase identico ao slice
+
+*/
+
+const linguagem2 = 'JavaScript';
+linguagem2.substring(3,5); // aS
+linguagem2.substring(0,4); // Java
+linguagem2.substring(4); // Script
+linguagem2.substring(-3); // JavaScript
+
+
+
+
+/*
+
+STR.INDEXOF(SEARCH) E STR.LASTINDEXOF(SEARCH)
+Retorna o index da string, assim que achar o primeiro resultado ele já retorna. No caso do lastIndexOf ele retorna o último resultado.
+
+*/
+
+const instrumento = 'Guitarra';
+
+instrumento.indexOf('r'); // 5
+instrumento.lastIndexOf('r'); // 6
+instrumento.indexOf('ta'); // 3
