@@ -156,10 +156,51 @@ linguagem2.substring(-3); // JavaScript
 STR.INDEXOF(SEARCH) E STR.LASTINDEXOF(SEARCH)
 Retorna o index da string, assim que achar o primeiro resultado ele já retorna. No caso do lastIndexOf ele retorna o último resultado.
 
+Também é case sensitive
+
 */
 
 const instrumento = 'Guitarra';
 
 instrumento.indexOf('r'); // 5
 instrumento.lastIndexOf('r'); // 6
+instrumento.lastIndexOf('i') // 2
+console.log(instrumento.lastIndexOf('i'))
 instrumento.indexOf('ta'); // 3
+
+
+
+
+/*
+
+STR.PADSTART(N, STR) E STR.PADEND(N, STR)
+Aumenta o tamanho da string para o valor de n. Ou seja, uma string com 8 caracteres, se passarmos n = 10, ela passará a ter 10 caracteres. 
+
+O preenchimento é feito com espaços, caso não seja declarado o segundo argumento.
+
+*/
+
+const listaPrecos = ['R$ 99', 'R$ 199', 'R$ 12000'];
+const cachorro = 'Labrador'
+
+listaPrecos.forEach((preco) => {
+  console.log(preco.padStart(10, '.'));
+})
+
+console.log('-----------------------------------------------')
+
+// costuma se utilizar esses lacos para alinhar os itens na tela
+listaPrecos.forEach((preco) => {
+    console.log(preco.padEnd(10, '-!-!'));
+  })
+
+listaPrecos[0].padStart(10, '.'); // .....R$ 99
+listaPrecos[0].padEnd(10, '.');   // R$ 99.....
+
+cachorro.padStart(10) // completa com espacos na frente ate completar 10 caracteres
+console.log(cachorro.padStart(20))
+console.log(cachorro.padStart(30,'()()()()()'))  
+
+
+
+
