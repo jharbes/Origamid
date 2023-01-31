@@ -23,9 +23,24 @@ const transacoes1 = [
       valor: 'R$ 49',
     },
   ];
+
+let somaTaxa=0
+let somaRecebimento=0
+transacoes1.forEach((item)=>{
+    if (item.descricao.includes('Taxa')){
+        somaTaxa+=parseFloat(item.valor.slice(3))
+    }
+    else if(item.descricao.includes('Recebimento')){
+        somaRecebimento+=parseFloat(item.valor.slice(3))
+    }
+})
+console.log('Taxa '+somaTaxa)
+console.log('Recebimento '+somaRecebimento)
   
   // Retorne uma array com a lista abaixo
   const transportes = 'Carro;Avião;Trem;Ônibus;Bicicleta';
+  const arrayTransportes=transportes.split(';')
+  console.log(arrayTransportes)
   
   // Substitua todos os span's por a's
   const html = `<ul>
