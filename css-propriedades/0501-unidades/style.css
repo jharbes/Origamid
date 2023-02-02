@@ -1,2 +1,61 @@
 @charset "UTF-8";
 
+/*
+
+rem
+Unidade relativa ao tamanho da fonte do elemento raiz html. Na maioria dos browsers com configuração padrão 1rem = 16px.
+
+*/
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: darkblue;
+    display: inline-block;
+}
+
+p{
+    background: lightblue;
+}
+
+.px{
+    font-size: 24px;
+    padding: 16px 32px;
+}
+
+/* fonte padrao do html de 16px */
+
+html{
+    font-size: 150%; /* observe que como o elemento foi setado como maior que 100% no caso do rem ele ficara maior ainda pois seu padrao eh o elemento html que deveria vir como 100% no seu padrao */
+}
+
+.rem{
+    font-size: 1.5rem; /* padrao que eh 16px, logo 2 rem=32px, 1.5rem =24px etc */
+    padding: 1rem 2rem; /* igual ao de cima na classe .px, pois 1rem=16px e 2rem=32px */
+}
+
+
+
+
+/*
+
+em
+em é uma unidade relativa ao tamanho da fonte do elemento pai. ou seja, aumentando o elemento pai ele aumenta relativamente a ele, o rem eh relativo apenas ao elemento html
+
+*/
+
+div {
+  font-size: 200%;
+}
+
+.px2 {
+  font-size: 32px;
+}
+
+.em2 {
+  font-size: 2em;
+}
+
+.rem2 {
+  font-size: 2rem;
+}
