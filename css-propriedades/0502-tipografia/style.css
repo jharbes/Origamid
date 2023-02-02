@@ -1,3 +1,10 @@
+/*
+
+Tipografia
+Existem diversas propriedades diferentes para ajustarmos a tipografia do site. Geralmente começam com font ou text.
+
+*/
+
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2rem;
