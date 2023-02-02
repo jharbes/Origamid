@@ -1,0 +1,24 @@
+body {
+  margin: 0px;
+}
+
+nav {
+  height: 100vh;
+  background: lightblue;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 60px;
+}
+
+article {
+  padding: 20px;
+  width: calc(100vw - 75px);
+  box-sizing: border-box;
+  margin-left: 60px;
+  background: lightcoral;
+}
+
+p {
+  margin-bottom: 400px;
+}

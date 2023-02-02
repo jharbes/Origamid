@@ -1,0 +1,30 @@
+/*
+
+vh e vw
+vh representa o tamanho da altura da tela visível (viewport height) e vw da largura (viewport width). 100vw = 100% da tela.
+
+Observação
+
+vw e vh sao diferentes de porcentagem!!! (porcentagem eh referente ao elemento pai)
+
+Antes do vh só existia a porcentagem. A porcentagem é problemática para definir o height, pois: height: 100%; significa 100% da altura do pai. A altura do pai sempre é definida pelo tamanho do conteúdo, então basicamente 100% de height não muda em nada.
+
+100vh será 100% da altura da tela, independente da quantidade de conteúdo.
+
+*/
+
+
+body {
+  font-family: Arial;
+  font-size: 150%;
+  margin: 0px;
+}
+
+div {
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 50vw;
+}
