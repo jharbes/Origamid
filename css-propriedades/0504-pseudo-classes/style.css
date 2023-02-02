@@ -20,3 +20,34 @@ Quando clicamos no elemento.
 Para links que já foram visitados.
 
 */
+
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial;
+  text-decoration: none;
+  background: #caf;
+  color: #217;
+}
+
+a:hover { /* quando passa o mouse por cima */
+  background: #adf;
+  color: #147;
+}
+
+a:focus { /* quando chegamos ate esse botao passando com a tecla tab */
+  background: #cfa;
+  color: #371;
+}
+
+a:active { /* botao assim que for clicado (momento do clique) */
+  background: #ffa;
+  color: #761;
+}
+
+/*
+a:visited {  link que ja foi visitado 
+  background: #fda;
+  color: #731;
+} */
