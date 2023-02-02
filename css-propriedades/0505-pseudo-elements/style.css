@@ -21,8 +21,8 @@ h1::after {
     content: '';
     display: block;
     width: 40px;
-    height: 4px;
-    background: #caf;
+    height: 6px;
+    background: red;
 }
   
 li {
@@ -34,8 +34,32 @@ li {
 li::before {
     content: '';
     display: inline-block;
-    width: 8px;
+    width: 10px;
     height: 8px;
     border-radius: 50%;
-    background-image: linear-gradient(#caf, #fff);
+    background-image: linear-gradient(blue, black);
+}
+
+
+
+/*
+
+::first-line e ::first-letter
+::first-line
+
+Seleciona a primeira linha do conteúdo.
+
+::first-letter
+
+Seleciona a primeira letra do conteúdo.
+
+*/
+
+p::first-line {
+    font-weight: bold;
+  }
+  
+p::first-letter {
+    font-size: 2rem;
+    color: blue;
 }
