@@ -13,6 +13,8 @@ Seleciona o último elemento.
 
 4 (quarto elemento), even (pares), odd (ímpares), 3n (de 3 em 3).
 
+IMPORTANTE*** Não precisa necessariamente ser utilizado em listas, basta que seja referenciado o elemento pai e a lista sera automaticamente os elementos que estiverem dentro do elemento pai selecionado
+
 */
 
 ol{
@@ -48,3 +50,26 @@ ol{
   .lista-2 li:nth-child(4n) {
     background: #caf;
   }
+
+
+
+
+
+/*
+
+:not
+O :not nega a seleção de um elemento específico.
+
+Lista com outras pseudo-classes: https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes
+
+*/
+
+/* todos menos first-child e last-child */
+ol li:not(:first-child, :last-child) {
+    background: #adf;
+}
+  
+/* todos h2's dentro de section, menos o que tiver a classe .contato */
+section h2:not(.contato) {
+    text-decoration: underline;
+}
