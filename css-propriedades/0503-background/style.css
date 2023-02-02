@@ -1,3 +1,11 @@
+/*
+
+Background
+O background pode receber outros valores além de cores sólidas, como imagens e gradientes. A diferença entre img e o background é que a img faz parte do conteúdo, o background apenas do estilo.
+
+*/
+
+
 .bicicleta {
   height: 600px;
   background-color: black;
@@ -5,7 +13,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  /* Escreve por cima do definido anteriormente */
+  /* O background shorthand Escreve por cima de TODOS os valores definidos anteriormente, ou seja, se nao for setado cada valor novamnete esses nao serao mais definidos */
+  /* O background shorthand funciona na ordem dos elementos setados acima. */
   /* background: url("./img/bicicleta.jpg"); */
   display: flex;
 }
