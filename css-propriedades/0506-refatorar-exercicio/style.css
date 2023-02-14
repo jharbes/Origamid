@@ -55,6 +55,12 @@ p {
   border-radius: 4px;
   color: #000000;
   text-transform: uppercase;
+  border: 2px solid #ffffff;
+}
+
+/* para que a borda nao "salte" quando utilizar o hover adicionamos ela no elemento em questao (sem o hover) e colocamos na mesma cor do background original */
+.menu a:hover{
+    border: 2px solid #e21;
 }
 
 .conteudo {
@@ -95,6 +101,10 @@ p {
   text-transform: uppercase;
 }
 
+.botao:hover{
+    background-color: #900;
+}
+
 .subtitulo {
   font-size: 4rem;
   text-transform: uppercase;
@@ -102,7 +112,7 @@ p {
   text-align: right;
   padding: 40px;
   align-self: center;
-  background-image: url(img/);
+  background-image: url(img/onda.svg);
 }
 
 .vantagens {
@@ -115,6 +125,11 @@ p {
   grid-template-columns: auto 1fr;
   gap: 10px 20px;
   padding: 20px;
+  border-left: 4px solid transparent;
+}
+
+.vantagens-item:hover{
+    border-left: 4px solid #e21;
 }
 
 .vantagens-item p {
