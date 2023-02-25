@@ -156,10 +156,16 @@ p {
       }
 
     .introducao::before {
-        background: transparent;
+        display: none;
     }
 
     .subtitulo {
         text-align: center;
       }
+}
+
+@media (max-width: 500px){
+    .subtitulo{
+        font-size: 1rem;
+    }
 }
