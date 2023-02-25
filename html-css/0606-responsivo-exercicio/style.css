@@ -11,6 +11,7 @@ body {
 img {
   max-width: 100%;
   display: block;
+  align-self: center;
 }
 
 a {
@@ -86,12 +87,12 @@ p {
 
 .introducao::before {
     content: "";
-  width: 60px;
-  height: 4px;
-  background: #e21;
-  position: absolute;
-  top: 30px;
-  right: -30px;
+    width: 60px;
+    height: 4px;
+    background: #e21;
+    position: absolute;
+    top: 30px;
+    right: -30px;
 }
 
 .botao {
@@ -147,4 +148,18 @@ p {
   text-align: center;
   padding: 40px;
   box-sizing: border-box;
+}
+
+@media (max-width: 800px){
+    .conteudo {
+        grid-template-columns: 1fr;
+      }
+
+    .introducao::before {
+        background: transparent;
+    }
+
+    .subtitulo {
+        text-align: center;
+      }
 }
