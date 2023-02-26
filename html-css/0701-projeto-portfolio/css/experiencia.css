@@ -82,3 +82,43 @@
     border-radius: 4px;
     background: #ffffff;
 }
+
+@media (max-width:1000px){
+    .experiencia{
+        grid-template-columns: 1fr;
+        gap:40px;
+    }
+
+    .experiencia .subtitulo{
+        color:#141414;
+
+    }
+
+    .subtitulo{
+        font-size: 2.4rem;
+        text-transform: capitalize;
+    }
+
+    .empresa-ano{
+        position: initial;
+        order:1;
+        width: initial;
+        text-align: left;
+    }
+
+    .empresa-ano::before{
+        content: "Ano: ";
+    }
+}
+
+@media (max-width: 800px){
+    .subtitulo{
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 400px){
+    .empresa{
+        grid-template-columns: 1fr;
+    }
+}
