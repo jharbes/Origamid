@@ -3,3 +3,13 @@
 @import url(global.css);
 @import url(header.css);
 @import url(introducao.css);
+
+@font-face {
+    font-family: RockSalt;
+    src: url(../fonts/RockSalt-Regular.ttf);
+}
+
+@font-face {
+    font-family: SourceCodePro;
+    src: url(../fonts/SourceCodePro-VariableFont_wght.ttf);
+}
