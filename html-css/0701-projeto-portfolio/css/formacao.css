@@ -1,5 +1,5 @@
 .formacao{
-    background-color: #141414ef;
+    background-color: #141414e8;
     color:#ffffff;
 }
 
@@ -90,7 +90,7 @@
 }
 
 .formacao-extra h3 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.4;
     color: #8f8f8f;
     text-transform: uppercase;
@@ -117,7 +117,7 @@
   }
 
   .formacao-extra li {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.1;
     margin-bottom: 20px;
   }
@@ -137,12 +137,15 @@
       padding: 60px 20px;
       gap: 40px;
     }
+
     .formacao .subtitulo {
       color: #ffffff;
     }
+
     .formacao-texto {
       font-size: 1.25rem;
     }
+    
     .formacao-extra h3::before {
       position: initial;
       margin-bottom: 10px;
