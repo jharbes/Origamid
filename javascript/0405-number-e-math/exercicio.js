@@ -12,7 +12,7 @@ const numeros = '4, 5, 20, 8, 9';
 numerosArray=numeros.split(',')
 console.log(Math.max.apply(null, numerosArray))
 
-
+console.log(Math.max(...numerosArray)) // resolucao professor (operador spread que passa o array como uma lista de argumentos)
 
 
 // Crie uma função para limpar os preços
