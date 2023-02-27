@@ -85,3 +85,22 @@ Transforma o número em uma string com base no Radix. Use o 10 para o sistema de
 
 const preco3 = 2.99;
 preco3.toString(10); // '2.99'
+
+
+
+/*
+
+N.TOLOCALESTRING(LANG, OPTIONS);
+Formata o número de acordo com a língua e opções passadas.
+Numero vira uma string
+
+*/
+
+const preco4 = 59.49;
+preco4.toLocaleString('en-US', {style: 'currency', currency: 'USD'}); // $59.49
+console.log(preco4.toLocaleString('en-US', {style: 'currency', currency: 'USD'}))
+
+preco4.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}); // R$ 59,49
+
+
+
