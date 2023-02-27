@@ -11,6 +11,7 @@
     grid-template-columns: 1fr 2fr;
     gap: 100px;
     position: relative;
+    align-items: center;
 }
 
 .formacao-container::after {
@@ -29,7 +30,7 @@
 }
 
 .formacao-texto{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     line-height: 1.33;
     margin-bottom: 60px;
     color: #a3a3a3;

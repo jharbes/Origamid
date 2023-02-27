@@ -17,5 +17,11 @@ ul{
 
 img{
     max-width: 100%;
+    height: auto;
     display: block;
+}
+
+.subtitulo{
+    font-size: 3rem;
+    text-transform: uppercase;
 }
