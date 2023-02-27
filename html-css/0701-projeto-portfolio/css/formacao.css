@@ -1,5 +1,5 @@
 .formacao{
-    background-color: #141414e8;
+    background-color: #141414ef;
     color:#ffffff;
 }
 
@@ -89,16 +89,8 @@
     margin-bottom: 60px;
 }
 
-.formacao-extra{
-    font-size: 1.1rem;
-    line-height: 1.4;
-    color:#8f8f8f;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
 .formacao-extra h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 1.4;
     color: #8f8f8f;
     text-transform: uppercase;
@@ -113,7 +105,7 @@
     height: 24px;
     position: absolute;
     left: -36px;
-    top: -4px;
+    top: 1px;
   }
 
   .cursos h3::before {
@@ -121,11 +113,11 @@
   }
   
   .idiomas h3::before {
-    background: url("../img/idiomas.svg") no-repeat center center;
+    background: url(../img/idiomas.svg) no-repeat center center;
   }
 
   .formacao-extra li {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.1;
     margin-bottom: 20px;
   }
