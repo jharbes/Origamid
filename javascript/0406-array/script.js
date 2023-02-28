@@ -107,5 +107,75 @@ const frutas = ['Banana', 'Pêra', ['Uva Roxa', 'Uva Verde']];
 frutas.length; // 3
 
 frutas[0].length; // 6
-frutas[1].length; // 5
+frutas[1].length; // 4
+console.log(frutas[1].length)
 frutas[2].length; // 2
+
+
+
+
+/*
+
+MÉTODOS MODIFICADORES [].SORT()
+Os próximos métodos que vamos falar sobre, são métodos modificadores (mutator methods). Além de retornarem um valor, eles modificam a array original. [].sort() organiza a pelo unicode.
+
+*/
+
+const instrumentos2 = ['Guitarra', 'Baixo', 'Violão'];
+instrumentos2.sort();
+instrumentos2; // ['Baixo', 'Guitarra', Violão] colocou em ordem alfabetica
+
+const idades = [32,21,33,43,1,12,8];
+idades.sort();
+idades; // [1, 12, 21, 32, 33, 43, 8] 
+console.log("🚀 ~ file: script.js:131 ~ idades:", idades)
+
+
+
+
+/*
+
+[].UNSHIFT() E [].PUSH()
+[].unshift() adiciona elementos ao início da array e retorna o length da mesma. [].push() adiciona elementos ao final da array e retorna o length da mesma.
+
+*/
+
+const carros3 = ['Ford', 'Fiat', 'VW'];
+carros3.unshift('Honda', 'Kia'); // 5
+carros3; // ['Honda', 'Kia', 'Ford', 'Fiat', 'VW'];
+
+carros3.push('Ferrari'); // 6
+carros3; // ['Honda', 'Kia', 'Ford', 'Fiat', 'VW', 'Ferrari'];
+
+
+
+
+/*
+
+[].SHIFT() E [].POP()
+[].shift() remove o primeiro elemento da array e retorna o mesmo. [].pop() remove o último elemento da array e retorna o mesmo.
+
+*/
+
+const carros4 = ['Ford', 'Fiat', 'VW', 'Honda'];
+const primeiroCarro = carros4.shift(); // 'Ford'
+carros4; // ['Fiat', 'VW', 'Honda'];
+
+const ultimoCarro = carros4.pop(); // 'Honda'
+carros4; // ['Fiat', 'VW'];
+
+
+
+
+/*
+
+[].REVERSE()
+[].reverse() inverte os itens da array e retorna a nova array.
+
+modifica a array original
+
+*/
+
+const carros5 = ['Ford', 'Fiat', 'VW', 'Honda'];
+carros5.reverse(); // ['Honda', 'VW', 'Fiat', 'Ford'];
+console.log("🚀 ~ file: script.js:179 ~ carros5:", carros5) // ['Honda', 'VW', 'Fiat', 'Ford']
