@@ -69,8 +69,8 @@ const temUva = frutas2.some((fruta) => {
 function maiorQue100(numero) {
   return numero > 100;
 }
-const numeros = [0, 43, 22, 88, 101, 2];
-const temMaior = numeros.some(maiorQue100); // true
+const numeros4 = [0, 43, 22, 88, 101, 2];
+const temMaior = numeros4.some(maiorQue100); // true
 
 
 
@@ -89,5 +89,5 @@ const arraysCheias = frutas3.every((fruta) => {
   return fruta; // false
 });
 
-const numeros2 = [6, 43, 22, 88, 101, 29];
-const maiorQue3 = numeros2.every(x => x > 3); // true
+const numeros5 = [6, 43, 22, 88, 101, 29];
+const maiorQue3 = numeros5.every(x => x > 3); // true
