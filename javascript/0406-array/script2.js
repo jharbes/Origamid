@@ -91,3 +91,48 @@ linguagens.includes('ruby'); // false
 linguagens.indexOf('python'); // 4
 linguagens.indexOf('js'); // 2
 linguagens.lastIndexOf('js'); // 5
+
+
+
+
+/*
+
+[].JOIN()
+[].join(separador) junta todos os valores da array e retorna uma string com eles. Se você passar um valor como parâmetro, este será utilizado durante a junção de cada item da array.
+
+*/
+
+const linguagens2 = ['html', 'css', 'js', 'php', 'python'];
+
+// por padrao o join adiciona a , entre os elementos, para que eles fiquem grudados deve-se adicionar uma string vazia no argumento do join
+linguagens2.join(); // 'html,css,js,php,python'  
+console.log("file: script2.js:107 ~ linguagens2.join()", linguagens2.join())
+
+linguagens2.join(' '); // 'html css js php python'
+console.log("file: script2.js:110 ~ linguagens2.join(' ')", linguagens2.join(' '))
+
+linguagens2.join('-_-'); // 'html-_-css-_-js-_-php-_-python'
+
+let htmlString = '<h2>Título Principal</h2>'
+htmlString = htmlString.split('h2');
+// ['<', '>Título Principal</', '>']
+htmlString = htmlString.join('h1');
+// <h1>Título Principal</h1>
+
+
+
+
+/*
+
+[].SLICE()
+[].slice(inicio, final) retorna os itens da array começando pelo início e indo até o valor de final.
+
+*/
+
+const linguagens3 = ['html', 'css', 'js', 'php', 'python'];
+linguagens3.slice(3); // ['php', 'python']
+linguagens3.slice(1, 4); // ['css', 'js', 'php']
+
+
+// ***IMPORTANTE : O slice é muito utilizado para clonar um array, pois se simplesmentente igualarmos um array a outro ele apenas seguirá a referencia do outro array, sendo alterado junto com o outro caso esse tambem seja alterado ***
+const cloneLinguagens = linguagens3.slice();
